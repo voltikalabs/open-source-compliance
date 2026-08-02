@@ -1,0 +1,10 @@
+# Corresponding-source archives belong in GitHub Release assets, not Git.
+*.tar.xz
+*.zip
+
+# Application binaries and signing material are not compliance-repo content.
+*.apk
+*.aab
+*.jks
+*.keystore
+*.idsig
