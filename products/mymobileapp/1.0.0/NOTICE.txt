@@ -1,0 +1,33 @@
+MYMOBILEAPP OPEN-SOURCE SOFTWARE NOTICE
+
+MyMobileApp is Copyright (c) 2026 Voltika Labs. Application code is independently
+licensed and is not licensed under the GNU LGPL merely because it uses Qt.
+
+This application uses Qt 6.10.3, Copyright (C) The Qt Company Ltd. and other
+contributors. Eligible Qt libraries are used under the GNU Lesser General
+Public License version 3 (LGPLv3). You may modify, reverse engineer for the
+purpose of debugging modifications, and replace the LGPL-covered Qt libraries
+as permitted by that license. The complete LGPLv3 and GPLv3 texts are included
+with this application.
+
+The exact Qt modules, plugins, third-party components, source location, and
+replacement instructions must be listed in the compliance bundle accompanying
+the particular MyMobileApp release. Qt and the Qt logo are trademarks of The Qt Company
+Ltd. MyMobileApp is not endorsed by or affiliated with The Qt Company Ltd.
+
+MyMobileApp includes QtKeychain, Copyright (c) Frank Osterfeld and other contributors,
+under its BSD 3-Clause license.
+
+MyMobileApp includes icons from Lucide, Copyright (c) Lucide Contributors,
+under the ISC License. Selected icons may incorporate Feather Icons material
+under the MIT License as documented by the Lucide project.
+
+Android builds include OpenSSL binaries supplied through the KDAB Android
+OpenSSL packaging project. The packaging project and OpenSSL are provided under
+their applicable Apache License 2.0 terms. Their license texts are included.
+
+Android builds also include LLVM libc++ (`libc++_shared.so`) from Android NDK
+r27c. The NDK sysroot third-party notice is included with this application.
+
+NO WARRANTY: The open-source components are provided under the warranty
+disclaimers contained in their respective licenses.

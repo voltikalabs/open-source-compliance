@@ -1,0 +1,17 @@
+﻿Product: MyMobileApp 1.0.0
+Package ID: id.web.voltikalabs.mymobileapp
+ABI: arm64-v8a
+APK signature verification: passed
+Signer certificate SHA-256: c2d7ab3e3cfb7fa28564ee225cdf0e09ff66dab2cda1dce7d04a25d62e7860f4
+Package: android-build-MyMobileApp-release-signed.apk
+SHA-256: 3177ADA4251789A049FF0642320D12B0D9CE23F4EED5CE927352E2CAD6CB496A
+Native libraries: 74
+Forbidden GPL-only indicators: 0
+Debug plugin indicators: 0
+ZIP-visible notice indicators: 0
+
+GPL-only indicators:
+
+Debug plugin indicators:
+
+ZIP-visible notice indicators (Qt resources embedded in the application library are not listed here):
