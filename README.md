@@ -10,8 +10,8 @@ components and as required by their respective licenses.
 
 ## Products
 
-- [HWM 1.0.0](products/hwm/1.0.0/README.md)
 - [MyMobileApp 1.0.0](products/mymobileapp/1.0.0/README.md)
+- [HWM 1.0.0](products/hwm/1.0.0/README.md)
 
 ## Shared corresponding source
 
