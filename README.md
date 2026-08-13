@@ -10,13 +10,9 @@ components and as required by their respective licenses.
 
 ## Products
 
-<<<<<<< HEAD
 - [HWM 1.0.0](products/hwm/1.0.0/README.md)
 - [J2Outdoor 1.0.0](products/j2outdoor/1.0.0/README.md)
-=======
->>>>>>> 3a1332bee8120d15d5e53d107b307afa31f26877
 - [MyMobileApp 1.0.0](products/mymobileapp/1.0.0/README.md)
-- [HWM 1.0.0](products/hwm/1.0.0/README.md)
 
 ## Shared corresponding source
 
