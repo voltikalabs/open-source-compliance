@@ -1,0 +1,52 @@
+J2OUTDOOR OPEN-SOURCE SOFTWARE NOTICE
+
+J2Outdoor is Copyright (c) 2026 Voltika Labs. Application code is independently
+licensed and is not licensed under the GNU LGPL merely because it uses Qt.
+
+This application uses Qt 6.10.3, Copyright (C) The Qt Company Ltd. and other
+contributors. Eligible Qt libraries are used under the GNU Lesser General
+Public License version 3 (LGPLv3). You may modify, reverse engineer for the
+purpose of debugging modifications, and replace the LGPL-covered Qt libraries
+as permitted by that license. The complete LGPLv3 and GPLv3 texts are included
+with this application.
+
+The exact Qt modules, plugins, third-party components, source location, and
+replacement instructions are listed in the compliance bundle accompanying this
+J2Outdoor release. Qt and the Qt logo are trademarks of The Qt Company Ltd.
+J2Outdoor is not endorsed by or affiliated with The Qt Company Ltd.
+
+J2Outdoor includes QtKeychain, Copyright (c) Frank Osterfeld and other
+contributors, under its BSD 3-Clause license.
+
+J2Outdoor includes icons from Lucide, Copyright (c) Lucide Contributors, under
+the ISC License. Selected icons may incorporate Feather Icons material under
+the MIT License as documented by the Lucide project.
+
+J2Outdoor includes the Lobster Two font, Copyright (c) 2011 Pablo Impallari and
+Copyright (c) 2011 Igino Marini, under the SIL Open Font License 1.1. The
+reserved font names are "Lobster" and "Lobster Two".
+
+J2Outdoor uses Plus Jakarta Sans as its default interface font, Copyright 2020
+The Plus Jakarta Sans Project Authors, under the SIL Open Font License 1.1.
+
+Android builds include OpenSSL binaries supplied through the KDAB Android
+OpenSSL packaging project. The packaging project and OpenSSL are provided under
+their applicable Apache License 2.0 terms. Their license texts are included.
+
+Android builds also include LLVM libc++ (`libc++_shared.so`) from Android NDK
+r27c. The NDK sysroot third-party notice is included with this application.
+
+Android builds use Google ML Kit Text Recognition with the bundled Latin model
+(`com.google.mlkit:text-recognition:16.0.1`) to perform identity-card OCR on the
+device. Google states that ML Kit input and output processing occurs on-device;
+the SDK may nevertheless communicate with Google for maintenance, hardware
+compatibility, and performance or utilization metrics. Use of ML Kit is
+governed by the ML Kit Terms and the Google APIs Terms of Service:
+https://developers.google.com/ml-kit/terms
+https://developers.google.com/terms/
+
+Google and ML Kit are trademarks of Google LLC. J2Outdoor is not endorsed by
+or affiliated with Google LLC.
+
+NO WARRANTY: The open-source components are provided under the warranty
+disclaimers contained in their respective licenses.
