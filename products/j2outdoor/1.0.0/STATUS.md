@@ -2,19 +2,20 @@
 
 Status date: 2026-10-01
 
-The dependency/ML Kit audit is complete, but J2Outdoor 1.0.0 currently has no
-uploadable final artifact. The last audited APK/AAB were built explicitly for
-production and remain useful historical evidence, but are superseded by the
-v11 legal-resource update described below.
+The dependency/ML Kit audit is complete. The signed v11 production APK/AAB
+contain the refreshed legal resources and privacy text and passed package,
+signature, native-library, and 16 KiB alignment checks. The exact v11 APK has
+not been physically installed; the immediately preceding v10 candidate remains
+the physical-device and relinking baseline.
 
-The production package includes the Qt Multimedia Android classes and passes
-package, signature, and 16 KiB alignment checks. The exact final APK was
+The v10 production baseline includes the Qt Multimedia Android classes and passed
+package, signature, and 16 KiB alignment checks. That APK was
 update-installed and passed cold startup, foreground-activity, and PID-scoped
 fatal/JNI/native-link checks on a physical Android 16 arm64-v8a device. It also
 rendered the production storefront and passed Home, Categories, Cart, More,
 and background/resume testing.
 
-Production relinking also passed: QtSvg was replaced in the exact final APK,
+Production relinking also passed on v10: QtSvg was replaced in that APK,
 the package was realigned, recipient-signed, installed, launched without a
 fatal/JNI/native-link error, and the official APK was restored. The embedded
 license index and notice opened successfully, and the owner manually opened all
@@ -36,8 +37,14 @@ Apache-2.0 text to the distributed legal resources. Current Google disclosure
 states that OCR input/output remains on-device while ML Kit collects
 device/application information, performance/utilization metrics, and a bundled
 feature's per-installation identifier for diagnostics/usage analytics. These
-facts are now reflected in the privacy materials. A new signed production
-APK/AAB and refreshed inventory are required before Play upload.
+facts are now reflected in the privacy materials and signed v11 resources.
+
+The signed v11 APK SHA-256 is
+`A1BFC7BD97E9E7C543F241BC381A04C772E56D62E800C32BA2AED959D0F78C67` and
+the signed v11 AAB SHA-256 is
+`7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A`.
+Google Play-generated artifact verification, Data Safety submission, release
+archive publication, and final release-owner approval remain pending.
 
 The following earlier production-candidate hashes are superseded because that
 packaging omitted `Qt6AndroidMultimedia.jar` and crashed during Qt Multimedia

@@ -113,7 +113,7 @@ language and Data Safety working answers have been updated for ML Kit
 diagnostics and identifiers.
 
 The only remaining ML Kit action is procedural: enter the verified answers in
-the actual Play Console Data Safety form and retain the submitted record. A
-fresh signed APK/AAB must be produced because the added legal resources and
-legal-document version change the application binary; the new artifacts must
-then replace the superseded hashes in the release records.
+the actual Play Console Data Safety form and retain the submitted record. The
+signed v11 production APK/AAB containing the added legal resources and updated
+legal-document version were produced and audited on 2026-10-01; their hashes
+are recorded in this directory's `SHA256SUMS.txt`.

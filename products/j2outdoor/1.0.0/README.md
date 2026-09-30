@@ -6,8 +6,8 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
 
 ## Build summary
 
-- Release status: dependency audit complete; the previously signed candidate is
-  superseded by a required v11 legal-resource refresh and must not be uploaded
+- Release status: signed v11 production candidate built and audited; Google
+  Play submission and Play-generated artifact verification remain
 - Android package ID: `id.web.voltikalabs.j2outdoor`
 - Qt version: 6.10.3
 - Qt linking: separate Android shared libraries
@@ -18,17 +18,17 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
 - Android ABI: `arm64-v8a`
 - Minimum Android API: 28
 - Audited production signed APK SHA-256:
-  `8E0C5BA0267A2A69BEB8B740C67EE005C5B2E735548CAA4EE68E255DEFBE6005`
+  `A1BFC7BD97E9E7C543F241BC381A04C772E56D62E800C32BA2AED959D0F78C67`
 - Audited production signed AAB SHA-256:
-  `A553004DC754E55E3B3849D961A8C9E15FA2166C622E0E19129B71711C5CFDE7`
+  `7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A`
 - Signer certificate SHA-256:
   `dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5`
 
-The APK/AAB hashes above identify the last physical-test candidate only. They
-are retained as historical evidence and are superseded because the dependency
-audit added exact ML Kit third-party licenses, a generic Apache-2.0 text, and
-privacy version `2026-10-01-v11-draft`. Fresh signed hashes will replace them
-after the new production build and audit.
+The APK/AAB hashes above identify the signed v11 package containing the exact
+ML Kit third-party licenses, the resolved-transitive supplemental licenses, a
+generic Apache-2.0 text, and privacy version `2026-10-01-v11-draft`. Physical
+device and relinking results are retained as a baseline from the immediately
+preceding v10 candidate; the exact v11 APK has not been physically installed.
 
 ## Corresponding Qt source
 
@@ -39,8 +39,8 @@ https://github.com/voltikalabs/open-source-compliance/tree/main/sources/qt/6.10.
 ## Distribution artifacts
 
 The hashes identify the audited production release candidate. The AAB must not
-be treated as the completed Play release until the remaining release-owner,
-relinking, regression, and Google Play-generated artifact checks are recorded.
+be treated as the completed Play release until release-owner approval, Data
+Safety submission, and Google Play-generated artifact checks are recorded.
 
 The final signed Android App Bundle (`.aab`) submitted to Google Play and an
 optional signed verification APK may later be published as GitHub Release

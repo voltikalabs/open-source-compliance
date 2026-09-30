@@ -1,11 +1,11 @@
-Product: J2Outdoor 1.0.0
+﻿Product: J2Outdoor 1.0.0
 Package ID: id.web.voltikalabs.j2outdoor
 ABI: arm64-v8a
 API environment: production
 Package signature verification: passed
 Signer certificate SHA-256: dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5
 Package: android-build-release.aab
-SHA-256: A553004DC754E55E3B3849D961A8C9E15FA2166C622E0E19129B71711C5CFDE7
+SHA-256: 7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A
 Native libraries: 96
 Forbidden GPL-only indicators: 0
 Debug plugin indicators: 0

@@ -1,11 +1,6 @@
 # Android Artifact Verification
 
-Verification date: 2026-09-30
-
-> Superseded on 2026-10-01. This record remains physical-test evidence for the
-> v10 package, but the APK/AAB below must not be uploaded. The dependency audit
-> added Gradle/ML Kit license resources and privacy version v11; a fresh signed
-> artifact and verification record are required.
+Verification date: 2026-10-01
 
 This record covers the locally generated J2Outdoor 1.0.0 **production** release
 candidate for Android `arm64-v8a`. It does not cover APKs later generated and
@@ -15,9 +10,9 @@ signed by Google Play.
 - Minimum SDK: 28
 - Target and compile SDK: 36
 - Signed APK SHA-256:
-  `8E0C5BA0267A2A69BEB8B740C67EE005C5B2E735548CAA4EE68E255DEFBE6005`
+  `A1BFC7BD97E9E7C543F241BC381A04C772E56D62E800C32BA2AED959D0F78C67`
 - Signed AAB SHA-256:
-  `A553004DC754E55E3B3849D961A8C9E15FA2166C622E0E19129B71711C5CFDE7`
+  `7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A`
 - Local signing certificate SHA-256:
   `dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5`
 - APK signature: Android v3, one signer, verified
@@ -27,9 +22,14 @@ signed by Google Play.
 - Qt Multimedia Android class indicator in DEX: present
 - Packaged permissions: camera, internet, network state, and Android's generated
   non-exported dynamic-receiver permission
+- Embedded legal-document version: `2026-10-01-v11-draft`
+- Generated Qt resources list the exact ML Kit 16.0.1 license bundle, the
+  resolved-transitive supplemental bundle, and Apache License 2.0 text
 
-The exact production APK was update-installed on a physical Android 16
-arm64-v8a device. It passed cold startup, remained the top resumed activity,
+The immediately preceding v10 production APK
+(`8E0C5BA0267A2A69BEB8B740C67EE005C5B2E735548CAA4EE68E255DEFBE6005`)
+was update-installed on a physical Android 16 arm64-v8a device. It passed cold
+startup, remained the top resumed activity,
 and produced no PID-scoped fatal exception, JNI, class-loading, or native-link
 error. A production relinking proof also passed: QtSvg was replaced in this
 exact APK, realigned, recipient-signed, installed, and launched without a
@@ -51,7 +51,10 @@ restart, no `id-card-scan` file remained in private cache and a PID-scoped fatal
 signal/exception scan returned no match. Source review confirmed that the save
 payload excludes the image, NIK, and raw OCR text. Test screenshots containing
 the sample identity image were deleted. Checkout, export/import, and backup
-operations were not independently instrumented in this record.
+operations were not independently instrumented in this record. The source
+delta from this v10 physical baseline to v11 is limited to legal/privacy
+resources, license-list presentation, and build/evidence automation. The exact
+v11 APK has not been physically installed.
 
 The APK and AAB also contain identical hashes for the reviewed Qt and OpenSSL
 shared libraries. See `PACKAGED-NATIVE-SHA256SUMS.txt`.
