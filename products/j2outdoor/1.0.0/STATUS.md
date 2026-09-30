@@ -9,7 +9,9 @@ production DNS/TLS gate passed.
 The production package includes the Qt Multimedia Android classes and passes
 package, signature, and 16 KiB alignment checks. The exact final APK was
 update-installed and passed cold startup, foreground-activity, and PID-scoped
-fatal/JNI/native-link checks on a physical Android 16 arm64-v8a device.
+fatal/JNI/native-link checks on a physical Android 16 arm64-v8a device. It also
+rendered the production storefront and passed Home, Categories, Cart, More,
+and background/resume testing.
 
 Production relinking also passed: QtSvg was replaced in the exact final APK,
 the package was realigned, recipient-signed, installed, launched without a
