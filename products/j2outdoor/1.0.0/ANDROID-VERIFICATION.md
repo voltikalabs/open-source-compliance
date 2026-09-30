@@ -2,6 +2,11 @@
 
 Verification date: 2026-09-30
 
+> Superseded on 2026-10-01. This record remains physical-test evidence for the
+> v10 package, but the APK/AAB below must not be uploaded. The dependency audit
+> added Gradle/ML Kit license resources and privacy version v11; a fresh signed
+> artifact and verification record are required.
+
 This record covers the locally generated J2Outdoor 1.0.0 **production** release
 candidate for Android `arm64-v8a`. It does not cover APKs later generated and
 signed by Google Play.

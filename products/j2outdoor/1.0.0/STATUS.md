@@ -1,10 +1,11 @@
 # J2Outdoor 1.0.0 release status
 
-Status date: 2026-09-30
+Status date: 2026-10-01
 
-J2Outdoor 1.0.0 is currently an audited production release candidate. The
-APK/AAB were built explicitly for the production API environment after the
-production DNS/TLS gate passed.
+The dependency/ML Kit audit is complete, but J2Outdoor 1.0.0 currently has no
+uploadable final artifact. The last audited APK/AAB were built explicitly for
+production and remain useful historical evidence, but are superseded by the
+v11 legal-resource update described below.
 
 The production package includes the Qt Multimedia Android classes and passes
 package, signature, and 16 KiB alignment checks. The exact final APK was
@@ -25,8 +26,18 @@ Customer was not invoked, the customer list remained empty, and no scan file
 remained in private cache after restart. Test screenshots containing the sample
 identity image were deleted. Google Play-generated artifact verification and
 final release-owner approval remain pending. The public
-Privacy Policy is reconciled with embedded document version
-`2026-09-30-v10-draft` without publishing individual staff names.
+Privacy Policy v3 is reconciled with the new embedded document version
+`2026-10-01-v11-draft` without publishing individual staff names.
+
+The audit classified all 69 resolved Gradle runtime coordinates and recorded
+SHA-256 hashes for 65 AAR/JAR binaries; four coordinates are metadata-only. It
+also added the exact ML Kit 16.0.1 AAR third-party license bundle and a generic
+Apache-2.0 text to the distributed legal resources. Current Google disclosure
+states that OCR input/output remains on-device while ML Kit collects
+device/application information, performance/utilization metrics, and a bundled
+feature's per-installation identifier for diagnostics/usage analytics. These
+facts are now reflected in the privacy materials. A new signed production
+APK/AAB and refreshed inventory are required before Play upload.
 
 The following earlier production-candidate hashes are superseded because that
 packaging omitted `Qt6AndroidMultimedia.jar` and crashed during Qt Multimedia

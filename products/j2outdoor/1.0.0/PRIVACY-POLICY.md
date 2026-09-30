@@ -1,6 +1,6 @@
 # J2Outdoor Privacy Policy
 
-Version: 2026-09-30-v2
+Version: 2026-10-01-v3
 Effective date: 1 October 2026
 
 The Indonesian text is the primary operational version. The English text below
@@ -54,10 +54,15 @@ aplikasi atau server hanya sejauh diperlukan. Data Pribadi tidak dijual.
 Jika pengguna memilih mengirim permintaan melalui WhatsApp, aplikasi membuka
 WhatsApp dengan pesan yang dapat diperiksa sebelum dikirim. Pemrosesan oleh
 WhatsApp/Meta tunduk pada kebijakan mereka. Google ML Kit Text Recognition
-melakukan pengenalan teks pada perangkat; SDK dapat berkomunikasi dengan Google
-untuk pembaruan, kompatibilitas, serta metrik performa atau penggunaan sesuai
-ketentuan Google. Sinkronisasi dengan server J2 Outdoor menggunakan koneksi
-yang dilindungi.
+memproses gambar dan hasil OCR pada perangkat dan tidak mengirimkannya ke server
+Google. Menurut pengungkapan Google, SDK mengumpulkan informasi perangkat
+(seperti produsen, model, versi/build sistem operasi, dan akselerator ML),
+informasi aplikasi (nama paket dan versi), metrik performa/penggunaan, serta
+pengenal per-instalasi yang tidak dimaksudkan untuk mengidentifikasi pengguna
+atau perangkat fisik. Data diagnostik dan analitik penggunaan tersebut dikirim
+dengan HTTPS dan, menurut Google, tidak dibagikan kepada pihak ketiga. SDK juga
+dapat menghubungi Google untuk perbaikan, pembaruan model, dan kompatibilitas.
+Sinkronisasi dengan server J2 Outdoor menggunakan koneksi yang dilindungi.
 
 ### Keamanan dan retensi
 
@@ -142,9 +147,16 @@ application or server operators only as necessary. Personal Data is not sold.
 When a user chooses to send a request through WhatsApp, the application opens
 WhatsApp with a message that can be reviewed before sending. Processing by
 WhatsApp/Meta is governed by their policies. Google ML Kit Text Recognition
-performs recognition on the device; the SDK may communicate with Google for
-updates, compatibility, and performance or utilization metrics under Google's
-terms. Synchronization with the J2 Outdoor server uses a protected connection.
+processes images and OCR output on the device and does not send them to Google
+servers. According to Google's disclosure, the SDK collects device information
+(such as manufacturer, model, operating-system version/build, and ML
+accelerators), application information (package name and version),
+performance/utilization metrics, and a per-installation identifier not intended
+to identify a user or physical device. This diagnostics and usage-analytics
+data is sent using HTTPS and, according to Google, is not shared with third
+parties. The SDK may also contact Google for fixes, model updates, and
+compatibility information. Synchronization with the J2 Outdoor server uses a
+protected connection.
 
 ### Security and retention
 

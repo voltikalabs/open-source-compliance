@@ -14,8 +14,13 @@ proprietary and are not included in this compliance repository.
 | Plus Jakarta Sans | Version embedded in J2Outdoor 1.0.0 | Font embedded in application resources | SIL Open Font License 1.1 |
 | OpenSSL | Android OpenSSL package used by J2Outdoor 1.0.0 | Separate shared libraries | Apache 2.0 |
 | LLVM libc++ | Android NDK r27c / 27.2.12479018 | `libc++_shared.so` | NDK sysroot third-party notice included |
-| Google ML Kit Text Recognition | 16.0.1 plus resolved transitive dependencies | Android runtime dependency with bundled Latin OCR model | Google ML Kit and Google APIs terms; open-source notices supplied by the SDK where applicable |
+| Google ML Kit Text Recognition | 16.0.1 plus resolved transitive dependencies | Android runtime dependency with bundled Latin OCR model | Google ML Kit and Google APIs terms; exact AAR third-party and supplemental transitive license bundles included |
+| AndroidX/Kotlin runtime graph | 69 resolved coordinates; see runtime inventory | AAR/JAR dependencies packaged into or supporting the Android application | Apache-2.0-covered families and Google-distributed SDK components; exact classifications and hashes included |
 
 Target configuration: package ID `id.web.voltikalabs.j2outdoor`, Android API
 28 minimum, `arm64-v8a`, Release. The audited library list and signed APK hash
 are recorded in `native-libraries.txt` and `SHA256SUMS.txt`.
+
+The complete resolved Gradle graph, cached artifact hashes, ML Kit disclosure
+review, generic Apache License 2.0 text, and exact ML Kit AAR third-party
+license bundle are included in this directory.

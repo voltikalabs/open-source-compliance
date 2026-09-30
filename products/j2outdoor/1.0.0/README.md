@@ -6,8 +6,8 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
 
 ## Build summary
 
-- Release status: audited production release candidate; Play-generated
-  artifacts and release-owner approval remain pending
+- Release status: dependency audit complete; the previously signed candidate is
+  superseded by a required v11 legal-resource refresh and must not be uploaded
 - Android package ID: `id.web.voltikalabs.j2outdoor`
 - Qt version: 6.10.3
 - Qt linking: separate Android shared libraries
@@ -23,6 +23,12 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
   `A553004DC754E55E3B3849D961A8C9E15FA2166C622E0E19129B71711C5CFDE7`
 - Signer certificate SHA-256:
   `dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5`
+
+The APK/AAB hashes above identify the last physical-test candidate only. They
+are retained as historical evidence and are superseded because the dependency
+audit added exact ML Kit third-party licenses, a generic Apache-2.0 text, and
+privacy version `2026-10-01-v11-draft`. Fresh signed hashes will replace them
+after the new production build and audit.
 
 ## Corresponding Qt source
 
@@ -56,6 +62,12 @@ not publish the proprietary J2Outdoor application source code.
 - [Signed artifact checksums](SHA256SUMS.txt)
 - [Packaged Qt and OpenSSL hashes](PACKAGED-NATIVE-SHA256SUMS.txt)
 - [Android artifact verification](ANDROID-VERIFICATION.md)
+- [Gradle and ML Kit dependency audit](GRADLE-MLKIT-DEPENDENCY-AUDIT.md)
+- [Resolved Gradle runtime components](GRADLE-RUNTIME-COMPONENTS.txt)
+- [Gradle runtime artifact hashes](GRADLE-RUNTIME-ARTIFACT-SHA256SUMS.txt)
+- [Generic Apache License 2.0](licenses/Apache-2.0.txt)
+- [ML Kit 16.0.1 third-party licenses](licenses/Google-ML-Kit-Text-Recognition-16.0.1-Third-Party-Licenses.txt)
+- [ML Kit resolved-transitive supplemental licenses](licenses/Google-ML-Kit-Resolved-Transitive-Supplemental-Licenses.txt)
 - [Account deletion instructions](ACCOUNT-DELETION.md)
 - [Privacy Policy](PRIVACY-POLICY.md)
 - [Qt 6.10.3 security patch set](../../../sources/qt/6.10.3/SECURITY-PATCHES.md)
