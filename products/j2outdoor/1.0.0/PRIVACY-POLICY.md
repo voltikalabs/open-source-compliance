@@ -1,6 +1,6 @@
 # J2Outdoor Privacy Policy
 
-Version: 2026-09-30-v1
+Version: 2026-09-30-v2
 Effective date: 1 October 2026
 
 The Indonesian text is the primary operational version. The English text below
@@ -10,10 +10,10 @@ is a convenience translation.
 
 ### Pengelola dan kontak
 
-J2Outdoor dikelola oleh J2 Outdoor, dengan penanggung jawab Siti Rahma Junaeda,
-beralamat di Desa Dasan Borok, Kecamatan Suralaga, Kabupaten Lombok Timur,
-Nusa Tenggara Barat, Indonesia. Pertanyaan dan permintaan terkait privasi dapat
-dikirim ke **contact.j2outdoor@gmail.com**.
+Pengendali Data Pribadi dan pengelola J2Outdoor adalah J2 Outdoor, beralamat di
+Desa Dasan Borok, Kecamatan Suralaga, Kabupaten Lombok Timur, Nusa Tenggara
+Barat, Indonesia. Pertanyaan dan permintaan terkait privasi dapat dikirim ke
+**contact.j2outdoor@gmail.com**.
 
 ### Data yang diproses
 
@@ -99,10 +99,10 @@ versi serta tanggal berlakunya akan diperbarui.
 
 ### Controller and contact
 
-J2Outdoor is operated by J2 Outdoor. The responsible person is Siti Rahma
-Junaeda, with a business address in Dasan Borok Village, Suralaga District,
-East Lombok Regency, West Nusa Tenggara, Indonesia. Privacy questions and
-requests may be sent to **contact.j2outdoor@gmail.com**.
+The Personal Data Controller and operator of J2Outdoor is J2 Outdoor, with a
+business address in Dasan Borok Village, Suralaga District, East Lombok
+Regency, West Nusa Tenggara, Indonesia. Privacy questions and requests may be
+sent to **contact.j2outdoor@gmail.com**.
 
 ### Data processed
 

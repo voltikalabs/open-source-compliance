@@ -6,21 +6,21 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
 
 ## Build summary
 
-- Release status: pre-release; production endpoint and final Play artifact are
-  not yet approved
+- Release status: audited production release candidate; Play-generated
+  artifacts and release-owner approval remain pending
 - Android package ID: `id.web.voltikalabs.j2outdoor`
 - Qt version: 6.10.3
 - Qt linking: separate Android shared libraries
 - Qt source modifications: four official post-release security patches
-- Qt packaging provenance: corrected signed staging APK and AAB built from the
+- Qt packaging provenance: signed production APK and AAB built from the
   reviewed patched Qt installation; matching stripped library hashes are
   recorded below
 - Android ABI: `arm64-v8a`
 - Minimum Android API: 28
-- Audited staging signed APK SHA-256 (verification only):
-  `8B207E56420464E2A9E2A374ECB590DF6F1DF8541113F1AB7629CA13C3679970`
-- Audited staging signed AAB SHA-256 (verification only):
-  `A23B6120547A4E4EFCCCC98BC31ACB115B5CDD0EFDDA9BC027FA40535836D6FA`
+- Audited production signed APK SHA-256:
+  `8E0C5BA0267A2A69BEB8B740C67EE005C5B2E735548CAA4EE68E255DEFBE6005`
+- Audited production signed AAB SHA-256:
+  `A553004DC754E55E3B3849D961A8C9E15FA2166C622E0E19129B71711C5CFDE7`
 - Signer certificate SHA-256:
   `dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5`
 
@@ -32,10 +32,9 @@ https://github.com/voltikalabs/open-source-compliance/tree/main/sources/qt/6.10.
 
 ## Distribution artifacts
 
-No artifact represented by the current hashes is approved for Google Play.
-They identify the corrected staging verification candidate. After production
-DNS/TLS and final regression gates pass, this directory must be regenerated
-from an explicit production build before distribution.
+The hashes identify the audited production release candidate. The AAB must not
+be treated as the completed Play release until the remaining release-owner,
+relinking, regression, and Google Play-generated artifact checks are recorded.
 
 The final signed Android App Bundle (`.aab`) submitted to Google Play and an
 optional signed verification APK may later be published as GitHub Release

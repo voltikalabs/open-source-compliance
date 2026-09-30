@@ -2,18 +2,17 @@
 
 Verification date: 2026-09-30
 
-This record covers the corrected locally generated J2Outdoor 1.0.0 **staging**
-candidate for Android `arm64-v8a`. It is verification evidence only and is not
-approved for Google Play. Final production and Play-generated APKs must be
-audited separately.
+This record covers the locally generated J2Outdoor 1.0.0 **production** release
+candidate for Android `arm64-v8a`. It does not cover APKs later generated and
+signed by Google Play.
 
 - Package ID: `id.web.voltikalabs.j2outdoor`
 - Minimum SDK: 28
 - Target and compile SDK: 36
 - Signed APK SHA-256:
-  `8B207E56420464E2A9E2A374ECB590DF6F1DF8541113F1AB7629CA13C3679970`
+  `8E0C5BA0267A2A69BEB8B740C67EE005C5B2E735548CAA4EE68E255DEFBE6005`
 - Signed AAB SHA-256:
-  `A23B6120547A4E4EFCCCC98BC31ACB115B5CDD0EFDDA9BC027FA40535836D6FA`
+  `A553004DC754E55E3B3849D961A8C9E15FA2166C622E0E19129B71711C5CFDE7`
 - Local signing certificate SHA-256:
   `dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5`
 - APK signature: Android v3, one signer, verified
@@ -24,15 +23,18 @@ audited separately.
 - Packaged permissions: camera, internet, network state, and Android's generated
   non-exported dynamic-receiver permission
 
-The release-signed staging APK passed cold startup, storefront retrieval,
-primary navigation, background/resume, and embedded-license tests on a physical
-Android 16 arm64-v8a device without a fatal Qt/JNI/class-loading error.
+The exact production APK was update-installed on a physical Android 16
+arm64-v8a device. It passed cold startup, remained the top resumed activity,
+and produced no PID-scoped fatal exception, JNI, class-loading, or native-link
+error. Broader storefront, navigation, background/resume, embedded-license,
+camera/OCR, authentication, checkout, and relinking tests remain release gates
+for this exact artifact; the preceding production build with the same runtime
+code passed the earlier basic navigation regression.
 
 The APK and AAB also contain identical hashes for the reviewed Qt and OpenSSL
 shared libraries. See `PACKAGED-NATIVE-SHA256SUMS.txt`.
 
-After production DNS/TLS passes, generate and audit a new explicit production
-build. Google Play App Signing may sign generated APKs using a certificate
-different from the local upload key. After upload, the Play-generated artifacts
-must be downloaded and checked again for identity, permissions, signatures,
-native libraries, and 16 KiB alignment.
+Google Play App Signing may sign generated APKs using a certificate different
+from the local upload key. After upload, the Play-generated artifacts must be
+downloaded and checked again for identity, permissions, signatures, native
+libraries, and 16 KiB alignment.

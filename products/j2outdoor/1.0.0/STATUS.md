@@ -2,17 +2,19 @@
 
 Status date: 2026-09-30
 
-J2Outdoor 1.0.0 is currently a pre-release staging candidate. The APK/AAB
-hashes in this directory are verification evidence and must not be submitted to
-Google Play as the production release.
+J2Outdoor 1.0.0 is currently an audited production release candidate. The
+APK/AAB were built explicitly for the production API environment after the
+production DNS/TLS gate passed.
 
-The corrected staging package includes the Qt Multimedia Android classes,
-passes package/signature/16 KiB ZIP-alignment checks, and passed physical-device
-startup, storefront, navigation, background/resume, and embedded-license tests.
+The production package includes the Qt Multimedia Android classes and passes
+package, signature, and 16 KiB alignment checks. The exact final APK was
+update-installed and passed cold startup, foreground-activity, and PID-scoped
+fatal/JNI/native-link checks on a physical Android 16 arm64-v8a device.
 
-Production DNS/TLS, final production build, production regression/relinking,
-Google Play-generated artifact verification, public-policy reconciliation, and
-release-owner approval remain pending.
+Production relinking, the remaining full functional/security regression,
+Google Play-generated artifact verification, and release-owner approval remain
+pending. The public Privacy Policy is reconciled with embedded document version
+`2026-09-30-v10-draft` without publishing individual staff names.
 
 The following earlier production-candidate hashes are superseded because that
 packaging omitted `Qt6AndroidMultimedia.jar` and crashed during Qt Multimedia
