@@ -4,9 +4,11 @@ Status date: 2026-10-01
 
 The dependency/ML Kit audit is complete. The signed v11 production APK/AAB
 contain the refreshed legal resources and privacy text and passed package,
-signature, native-library, and 16 KiB alignment checks. The exact v11 APK has
-not been physically installed; the immediately preceding v10 candidate remains
-the physical-device and relinking baseline.
+signature, native-library, and 16 KiB alignment checks. The exact v11 APK was
+installed successfully and passed owner-performed manual startup,
+administrator-login, production-connectivity, primary-navigation,
+embedded-license, and Privacy Policy checks. Instrumented log/OCR and relinking
+evidence remains tied to the immediately preceding v10 baseline.
 
 The v10 production baseline includes the Qt Multimedia Android classes and passed
 package, signature, and 16 KiB alignment checks. That APK was

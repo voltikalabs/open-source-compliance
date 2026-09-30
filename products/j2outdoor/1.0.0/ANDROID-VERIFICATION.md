@@ -26,6 +26,13 @@ signed by Google Play.
 - Generated Qt resources list the exact ML Kit 16.0.1 license bundle, the
   resolved-transitive supplemental bundle, and Apache License 2.0 text
 
+The exact signed v11 APK identified above was installed with `adb install -r`
+and returned `Success`. The owner then manually verified startup, administrator
+login, production connectivity, Home, Categories, Cart, More, the About license
+index, the Apache-2.0 and both ML Kit license entries, and the v11 Privacy
+Policy. No problem was observed. This is owner-performed manual acceptance,
+not an instrumented log scan or a repeat of every data-changing workflow.
+
 The immediately preceding v10 production APK
 (`8E0C5BA0267A2A69BEB8B740C67EE005C5B2E735548CAA4EE68E255DEFBE6005`)
 was update-installed on a physical Android 16 arm64-v8a device. It passed cold
@@ -52,9 +59,10 @@ signal/exception scan returned no match. Source review confirmed that the save
 payload excludes the image, NIK, and raw OCR text. Test screenshots containing
 the sample identity image were deleted. Checkout, export/import, and backup
 operations were not independently instrumented in this record. The source
-delta from this v10 physical baseline to v11 is limited to legal/privacy
+delta from this instrumented v10 baseline to v11 is limited to legal/privacy
 resources, license-list presentation, and build/evidence automation. The exact
-v11 APK has not been physically installed.
+v11 APK has therefore received manual device acceptance plus the package,
+signature, alignment, native-library, and embedded-resource checks above.
 
 The APK and AAB also contain identical hashes for the reviewed Qt and OpenSSL
 shared libraries. See `PACKAGED-NATIVE-SHA256SUMS.txt`.

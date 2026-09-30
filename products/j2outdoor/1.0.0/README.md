@@ -26,9 +26,11 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
 
 The APK/AAB hashes above identify the signed v11 package containing the exact
 ML Kit third-party licenses, the resolved-transitive supplemental licenses, a
-generic Apache-2.0 text, and privacy version `2026-10-01-v11-draft`. Physical
-device and relinking results are retained as a baseline from the immediately
-preceding v10 candidate; the exact v11 APK has not been physically installed.
+generic Apache-2.0 text, and privacy version `2026-10-01-v11-draft`. The exact
+v11 APK installed successfully and passed owner-performed manual startup,
+login, production-connectivity, navigation, embedded-license, and Privacy
+Policy checks. Instrumented log/OCR and relinking results remain as a baseline
+from the immediately preceding v10 candidate.
 
 ## Corresponding Qt source
 
