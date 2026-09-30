@@ -15,11 +15,18 @@ and background/resume testing.
 
 Production relinking also passed: QtSvg was replaced in the exact final APK,
 the package was realigned, recipient-signed, installed, launched without a
-fatal/JNI/native-link error, and the official APK was restored. The remaining
-full functional/security regression, Google Play-generated artifact
-verification, and release-owner approval remain pending. The public Privacy
-Policy is reconciled with embedded document version `2026-09-30-v10-draft`
-without publishing individual staff names.
+fatal/JNI/native-link error, and the official APK was restored. The embedded
+license index and notice opened successfully, and the owner manually opened all
+application pages and reported normal behavior. The owner also authenticated as
+an administrator and passed Dashboard, Rentals, Items, Customers, More,
+Android runtime camera permission, in-app capture, and on-device OCR on the
+exact production APK. The sample identity fields remained editable, Save
+Customer was not invoked, the customer list remained empty, and no scan file
+remained in private cache after restart. Test screenshots containing the sample
+identity image were deleted. Google Play-generated artifact verification and
+final release-owner approval remain pending. The public
+Privacy Policy is reconciled with embedded document version
+`2026-09-30-v10-draft` without publishing individual staff names.
 
 The following earlier production-candidate hashes are superseded because that
 packaging omitted `Qt6AndroidMultimedia.jar` and crashed during Qt Multimedia

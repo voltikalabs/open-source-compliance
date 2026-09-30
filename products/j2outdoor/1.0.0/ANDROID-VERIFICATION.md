@@ -33,9 +33,20 @@ The relinked test APK SHA-256 was
 `1AA45662C9BFD33957874951D92B367D0C67460F947FDEB7041FB7444A582AA0`.
 The official production APK then rendered the production storefront and passed
 Home, Categories, Cart, More, and background/resume testing while retaining the
-same process, with no fatal error afterward. Embedded-license interaction,
-camera/OCR, authentication, checkout, export/import, and backup tests remain
-release gates for this exact artifact.
+same process, with no fatal error afterward. The embedded license index listed
+all expected entries and the J2Outdoor notice opened. The owner subsequently
+reported manually opening all application pages and observing normal behavior.
+The owner then authenticated as an administrator without exposing credentials.
+Dashboard, Rentals, Items, Customers, and More passed against the intentionally
+empty/default production dataset. Android runtime camera permission, in-app
+capture, and on-device OCR extracted the expected name, village, and
+regency/city from a sample identity image into editable fields. Save Customer
+was intentionally not invoked and the customer list remained empty. After
+restart, no `id-card-scan` file remained in private cache and a PID-scoped fatal
+signal/exception scan returned no match. Source review confirmed that the save
+payload excludes the image, NIK, and raw OCR text. Test screenshots containing
+the sample identity image were deleted. Checkout, export/import, and backup
+operations were not independently instrumented in this record.
 
 The APK and AAB also contain identical hashes for the reviewed Qt and OpenSSL
 shared libraries. See `PACKAGED-NATIVE-SHA256SUMS.txt`.
