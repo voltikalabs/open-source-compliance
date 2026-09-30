@@ -26,10 +26,14 @@ signed by Google Play.
 The exact production APK was update-installed on a physical Android 16
 arm64-v8a device. It passed cold startup, remained the top resumed activity,
 and produced no PID-scoped fatal exception, JNI, class-loading, or native-link
-error. Broader storefront, navigation, background/resume, embedded-license,
-camera/OCR, authentication, checkout, and relinking tests remain release gates
-for this exact artifact; the preceding production build with the same runtime
-code passed the earlier basic navigation regression.
+error. A production relinking proof also passed: QtSvg was replaced in this
+exact APK, realigned, recipient-signed, installed, and launched without a
+fatal/JNI/class/native-link error; the official APK was restored afterward.
+The relinked test APK SHA-256 was
+`1AA45662C9BFD33957874951D92B367D0C67460F947FDEB7041FB7444A582AA0`.
+Broader storefront, navigation, background/resume, embedded-license, camera/OCR,
+authentication, checkout, export/import, and backup tests remain release gates
+for this exact artifact.
 
 The APK and AAB also contain identical hashes for the reviewed Qt and OpenSSL
 shared libraries. See `PACKAGED-NATIVE-SHA256SUMS.txt`.

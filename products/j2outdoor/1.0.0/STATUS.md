@@ -11,10 +11,13 @@ package, signature, and 16 KiB alignment checks. The exact final APK was
 update-installed and passed cold startup, foreground-activity, and PID-scoped
 fatal/JNI/native-link checks on a physical Android 16 arm64-v8a device.
 
-Production relinking, the remaining full functional/security regression,
-Google Play-generated artifact verification, and release-owner approval remain
-pending. The public Privacy Policy is reconciled with embedded document version
-`2026-09-30-v10-draft` without publishing individual staff names.
+Production relinking also passed: QtSvg was replaced in the exact final APK,
+the package was realigned, recipient-signed, installed, launched without a
+fatal/JNI/native-link error, and the official APK was restored. The remaining
+full functional/security regression, Google Play-generated artifact
+verification, and release-owner approval remain pending. The public Privacy
+Policy is reconciled with embedded document version `2026-09-30-v10-draft`
+without publishing individual staff names.
 
 The following earlier production-candidate hashes are superseded because that
 packaging omitted `Qt6AndroidMultimedia.jar` and crashed during Qt Multimedia
