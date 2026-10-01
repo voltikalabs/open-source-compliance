@@ -1,6 +1,6 @@
 # SYARAT PENYEWAAN & KEBIJAKAN PRIVASI J2 OUTDOOR
 
-**Versi:** 2026-10-01-v11-draft
+**Versi:** 2026-10-01-v12-draft
 
 **Tanggal berlaku:** 1 Oktober 2026
 
@@ -17,6 +17,8 @@ Apabila Anda tidak menyetujui, jangan mengirim permintaan melalui aplikasi. Anda
 ## 2. Permintaan Rental Bukan Konfirmasi Penyewaan
 
 Pesan WhatsApp dan draft yang dibuat aplikasi merupakan permintaan awal, bukan konfirmasi ketersediaan, harga final, atau perjanjian penyewaan. Penyewaan berlaku setelah admin memeriksa stok, periode, identitas, jaminan, harga, deposit, dan ketentuan pengambilan, kemudian memberikan konfirmasi.
+
+Layanan utama tersedia di Lombok Timur. Permintaan dari wilayah lain di Pulau Lombok dapat dipertimbangkan berdasarkan jangkauan operasional dan ketersediaan.
 
 Estimasi harga di aplikasi dihitung dari data saat permintaan dibuat. Harga final, deposit, denda, biaya kerusakan, dan biaya lain yang sah harus dijelaskan dan disetujui sebelum transaksi dikonfirmasi. J2 Outdoor tidak boleh membebankan biaya yang tidak diinformasikan secara jelas.
 
@@ -39,6 +41,8 @@ Jika rental dilanjutkan, kami menyimpan nama, nomor telepon, desa/kelurahan, kab
 ## 5. Tujuan dan Dasar Pemrosesan
 
 Data digunakan secara terbatas untuk menerima dan menindaklanjuti permintaan; memeriksa ketersediaan; membuat, melaksanakan, dan menyelesaikan rental; memverifikasi identitas dan jaminan; berkomunikasi; memproses pembayaran, deposit, pengembalian, kerusakan, atau sengketa; menjaga keamanan barang; memenuhi kewajiban hukum; mencegah penyalahgunaan; serta menjaga audit dan keamanan sistem.
+
+Informasi desa/kelurahan dan kabupaten/kota digunakan untuk keperluan operasional rental dan pemeriksaan jangkauan layanan.
 
 Dasar pemrosesan dapat berupa persetujuan eksplisit Anda, tindakan atas permintaan Anda sebelum membuat perjanjian, pelaksanaan perjanjian, kewajiban hukum, atau kepentingan sah yang telah mempertimbangkan hak Anda, sesuai peraturan yang berlaku.
 

@@ -1,6 +1,6 @@
 # J2Outdoor 1.0.0 Release Compliance Checklist
 
-Last updated: 2026-10-01
+Last updated: 2026-10-02
 
 Owner approval is complete; see `OWNER-APPROVAL.md`. Actual Play Console
 submission and final store checks remain separate gates.
@@ -19,19 +19,19 @@ itself constitute legal advice.
 | P0 | Corresponding Qt 6.10.3 source | Complete | Source release and SHA-256 are documented at the durable compliance URL. |
 | P0 | Android permission minimization | Complete for signed candidate | Final candidate contains camera, internet, network-state, and Android's generated non-exported receiver permission. |
 | P0 | Qt security/CVE review | Patched package proof complete | Four official patches were compiled for Android arm64-v8a. Deployment provenance, build hashes, SBOMs, and matching stripped APK/AAB library hashes are recorded. |
-| P0 | Final Play artifact | Production candidate audited | Exact production APK/AAB pass packaging, signature, inventory, and alignment checks. Play-generated artifact verification remains after upload. |
+| P0 | Final Play artifact | AES production candidate audited | Exact v12 production APK/AAB pass packaging, signature, inventory, AES-marker, legal-resource, and alignment checks. Production smoke and Play-generated artifact verification remain. |
 | P0 | Account deletion | Published and publicly reachable | The privacy, deletion, and compliance URLs returned HTTP 200 without authentication; final store-listing reconciliation remains. |
-| P0 | Privacy Policy and Data safety | Owner approved; Play submission pending | Embedded v11 and public v3 include ML Kit device/app diagnostics and per-installation identifiers. Actual Play Console submission remains. |
-| P1 | SBOM and resolved dependencies | Complete for signed v11 candidate | All 69 resolved Gradle runtime coordinates are classified; 65 cached binaries are checksummed, four coordinates are metadata-only, and exact ML Kit third-party licenses are packaged as distributed resources. |
+| P0 | Privacy Policy and Data safety | Owner approved; Play submission pending | Embedded v12 and public v4 include ML Kit disclosures and the Lombok service-area statement. Actual Play Console submission remains. |
+| P0 | U.S. export classification | Complete for exact AES candidate | `EXPORT-CLASSIFICATION-EAR99.md` records EAR99 from the product-function assessment; no ENC classification request, CCATS, or annual ENC report was identified as applicable. |
+| P1 | SBOM and resolved dependencies | Complete for signed AES candidate | All 69 resolved Gradle runtime coordinates are classified; 65 cached binaries are checksummed, four coordinates are metadata-only, and exact ML Kit third-party licenses are packaged as distributed resources. |
 | P1 | LGPL relinking proof | v10 production baseline passed | QtSvg was replaced in the immediately preceding v10 production APK, stored uncompressed, realigned, recipient-signed, installed, and run on Android 16/arm64-v8a; the official APK was then restored. The reviewed Qt library set is unchanged in v11. |
-| P1 | Functional/security regression | v11 manual device acceptance and package audit complete | The exact v11 APK installed successfully and passed owner-performed startup, administrator login, production connectivity, primary navigation, license-entry, and Privacy Policy checks. Automated/assisted v10 baseline checks covered background/resume, fatal/JNI/native-link errors, runtime camera permission, capture, and on-device OCR. Checkout, export/import, and backup operations were not independently instrumented. |
+| P1 | Functional/security regression | Automated production startup passed; manual workflow check pending | The exact production AES APK installed, launched, and produced no immediate fatal/JNI/class-loading log. Staging AES telephone save/display passed; briefly confirm authenticated production workflows before upload. |
 | P1 | Owner/store review | Owner approved; store checks pending | J2Outdoor understands and approves the operational facts, store terms, Privacy Policy, Data safety answers, and release bundle. Verify final store listing, publisher identity, and compliance URLs during Play setup. |
 | P2 | Release archive and publication | v11 candidate published | Complete ZIP, signed APK/AAB, and checksums are published under `j2outdoor-1.0.0-v11-rc1`. GitHub asset digests match the local archive. Exact Play-upload reconciliation remains pending. |
 
-The previous signed APK/AAB include `2026-09-30-v10-draft` and remain only as
-physical-device/relinking baseline evidence. The signed v11 candidate includes
-the dependency-license resources and `2026-10-01-v11-draft` privacy update;
-its refreshed hashes and inventories are recorded below.
+The v10 and v11 signed packages remain physical-device, relinking, and archive
+baseline evidence. The new candidate includes the dependency-license resources,
+`2026-10-01-v12-draft`, and the AES-GCM remediation.
 
 ## Current evidence
 
@@ -55,6 +55,10 @@ its refreshed hashes and inventories are recorded below.
   `A1BFC7BD97E9E7C543F241BC381A04C772E56D62E800C32BA2AED959D0F78C67`
 - Signed v11 production AAB SHA-256:
   `7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A`
+- Signed AES production APK SHA-256:
+  `2DAC3A77203E08F6CDBB3E5782D4B3A41CD5859E41671306DFAAC4451AE253B3`
+- Signed AES production AAB SHA-256:
+  `5C967785C6F5E0B43FACE7AC41764ACB3F3B5B1EADCF5873A200988FC7F03920`
 - Signer certificate SHA-256:
   `dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5`
 - Final Android verification: `compliance/ANDROID-FINAL-ARTIFACT-VERIFICATION.md`
@@ -157,4 +161,4 @@ the pre-publication checklist snapshot; this checklist records subsequent progre
 - [x] Obtain documented business-owner approval of the operational facts,
       store terms, Privacy Policy, Data safety answers, and release bundle.
       J2Outdoor has understood and approved these materials as recorded on
-      2026-10-01. See `OWNER-APPROVAL.md` for scope and remaining store checks.
+      2026-10-02. See `OWNER-APPROVAL.md` for scope and remaining store checks.

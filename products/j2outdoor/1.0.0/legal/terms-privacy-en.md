@@ -1,6 +1,6 @@
 # J2 OUTDOOR RENTAL TERMS & PRIVACY POLICY
 
-**Version:** 2026-10-01-v11-draft
+**Version:** 2026-10-01-v12-draft
 
 **Effective date:** 1 October 2026
 
@@ -17,6 +17,8 @@ If you do not agree, do not submit the request through the application. You may 
 ## 2. A Rental Request Is Not a Rental Confirmation
 
 The WhatsApp message and application draft are an initial request, not confirmation of availability, final price, or a rental agreement. A rental takes effect only after an administrator checks stock, period, identity, collateral, price, deposit, and pickup terms and then confirms the transaction.
+
+Primary service is available in East Lombok. Requests from other areas on Lombok may be considered based on operational coverage and availability.
 
 Prices shown in the application are estimates based on data available when the request is created. The final price, deposit, late fees, damage charges, and any other lawful charges must be explained and agreed before confirmation. J2 Outdoor must not impose charges that were not clearly disclosed.
 
@@ -39,6 +41,8 @@ If the rental proceeds, we store name, telephone number, village, regency/city, 
 ## 5. Purposes and Legal Bases
 
 Data is used only as necessary to receive and respond to requests; check availability; create, perform, and complete rentals; verify identity and collateral; communicate; process payments, deposits, returns, damage, or disputes; protect equipment; comply with law; prevent misuse; and maintain system security and audit records.
+
+Village and regency/city information is used for rental operations and to assess service coverage.
 
 Depending on the activity, the legal basis may be your explicit consent, steps taken at your request before entering a contract, performance of a contract, compliance with a legal obligation, or a legitimate interest balanced against your rights, in accordance with applicable law.
 

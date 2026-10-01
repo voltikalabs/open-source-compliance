@@ -1,6 +1,6 @@
 # J2Outdoor 1.0.0 release status
 
-Status date: 2026-10-01
+Status date: 2026-10-02
 
 The dependency/ML Kit audit is complete. The signed v11 production APK/AAB
 contain the refreshed legal resources and privacy text and passed package,
@@ -10,12 +10,17 @@ administrator-login, production-connectivity, primary-navigation,
 embedded-license, and Privacy Policy checks. Instrumented log/OCR and relinking
 evidence remains tied to the immediately preceding v10 baseline.
 
-The next-candidate source replaces the proprietary `J2N1` local telephone
+The new production candidate replaces the proprietary `J2N1` local telephone
 protection with platform-provider AES-256-GCM. The API contract and backend are
-unchanged. This source remediation does not alter the published v11 binaries;
-a new signed candidate, audit, archive, and applicable export
-classification/reporting record remain required. See
-`CUSTOMER-LOCAL-ENCRYPTION.md`.
+unchanged. Its signed APK/AAB passed package audit, and binary inspection found
+`J2A1`, the v12 legal resources, and no `J2N1` marker. The new artifact hashes
+are recorded below. The exact APK subsequently installed and passed an
+automated launch/no-fatal-log smoke check; brief authenticated manual workflow
+confirmation remains. The product-function assessment records EAR99 for the exact
+candidate, so no ENC classification request, CCATS, or annual ENC report was
+identified as applicable. Publication remains required. See
+`CUSTOMER-LOCAL-ENCRYPTION.md` and
+`EXPORT-CLASSIFICATION-EAR99.md`.
 
 The v10 production baseline includes the Qt Multimedia Android classes and passed
 package, signature, and 16 KiB alignment checks. That APK was
@@ -59,6 +64,12 @@ pending. Owner approval and Play Console account verification are complete.
 The v11 archive is published in the
 `j2outdoor-1.0.0-v11-rc1` prerelease; see `RELEASE-ARCHIVE.md` for contents,
 publication status, and the ongoing retention commitment.
+
+The local signed AES production APK SHA-256 is
+`2DAC3A77203E08F6CDBB3E5782D4B3A41CD5859E41671306DFAAC4451AE253B3`
+and the matching AAB SHA-256 is
+`5C967785C6F5E0B43FACE7AC41764ACB3F3B5B1EADCF5873A200988FC7F03920`.
+These new artifacts have not yet replaced the immutable v11 prerelease assets.
 
 The following earlier production-candidate hashes are superseded because that
 packaging omitted `Qt6AndroidMultimedia.jar` and crashed during Qt Multimedia
