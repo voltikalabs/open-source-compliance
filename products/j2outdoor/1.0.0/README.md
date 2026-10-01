@@ -40,19 +40,26 @@ https://github.com/voltikalabs/open-source-compliance/tree/main/sources/qt/6.10.
 
 ## Distribution artifacts
 
-The hashes identify the audited production release candidate. The AAB must not
-be treated as the completed Play release until release-owner approval, Data
-Safety submission, and Google Play-generated artifact checks are recorded.
-
-The final signed Android App Bundle (`.aab`) submitted to Google Play and an
-optional signed verification APK may later be published as GitHub Release
-assets. They are intentionally not stored as Git blobs.
+The hashes identify the owner-approved, audited v11 production candidate.
+The candidate APK/AAB and complete compliance ZIP are prepared for the
+[v11 prerelease](https://github.com/voltikalabs/open-source-compliance/releases/tag/j2outdoor-1.0.0-v11-rc1).
+See [archive contents and retention](RELEASE-ARCHIVE.md). They are Release
+assets, not Git blobs. Google Play submission, Data safety declarations, and
+Play-generated artifact checks remain pending.
 
 Signing keystores, signing passwords, service credentials, and other private
 release secrets are never published. Publishing the compiled APK or AAB does
 not publish the proprietary J2Outdoor application source code.
 
 ## Documents
+
+- [Owner approval](OWNER-APPROVAL.md)
+- [Release archive and retention](RELEASE-ARCHIVE.md)
+- [Release checklist snapshot](RELEASE-CHECKLIST.md)
+- [Qt module SPDX SBOMs](sbom/)
+- [Embedded rental/privacy terms](legal/)
+- [Relinking test record](relinking/TEST-RECORD.md)
+- [Qt build scripts and patches](source-build/)
 
 - [Open-source notice](NOTICE.txt)
 - [Current release status](STATUS.md)

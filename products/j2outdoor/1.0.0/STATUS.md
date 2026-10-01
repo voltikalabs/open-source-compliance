@@ -28,7 +28,8 @@ exact production APK. The sample identity fields remained editable, Save
 Customer was not invoked, the customer list remained empty, and no scan file
 remained in private cache after restart. Test screenshots containing the sample
 identity image were deleted. Google Play-generated artifact verification and
-final release-owner approval remain pending. The public
+final store checks remain pending. Owner approval is recorded in
+`OWNER-APPROVAL.md`. The public
 Privacy Policy v3 is reconciled with the new embedded document version
 `2026-10-01-v11-draft` without publishing individual staff names.
 
@@ -45,8 +46,10 @@ The signed v11 APK SHA-256 is
 `A1BFC7BD97E9E7C543F241BC381A04C772E56D62E800C32BA2AED959D0F78C67` and
 the signed v11 AAB SHA-256 is
 `7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A`.
-Google Play-generated artifact verification, Data Safety submission, release
-archive publication, and final release-owner approval remain pending.
+Google Play-generated artifact verification and Data Safety submission remain
+pending. Owner approval is complete. The v11 archive is prepared for the
+`j2outdoor-1.0.0-v11-rc1` prerelease; see `RELEASE-ARCHIVE.md` for contents,
+publication status, and the ongoing retention commitment.
 
 The following earlier production-candidate hashes are superseded because that
 packaging omitted `Qt6AndroidMultimedia.jar` and crashed during Qt Multimedia
