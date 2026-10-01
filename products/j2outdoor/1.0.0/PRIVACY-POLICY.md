@@ -1,6 +1,6 @@
 # J2Outdoor Privacy Policy
 
-Version: 2026-10-01-v3
+Version: 2026-10-01-v4
 Effective date: 1 October 2026
 
 The Indonesian text is the primary operational version. The English text below
@@ -45,6 +45,11 @@ menangani pengembalian, kerusakan, keamanan, penyalahgunaan, audit, dan
 sengketa, serta memenuhi kewajiban hukum. Dasarnya dapat berupa tindakan atas
 permintaan pengguna, pelaksanaan perjanjian, kewajiban hukum, persetujuan yang
 spesifik, atau kepentingan sah yang mempertimbangkan hak pengguna.
+
+Layanan utama tersedia di Lombok Timur. Permintaan dari wilayah lain di Pulau
+Lombok dapat dipertimbangkan berdasarkan jangkauan operasional dan
+ketersediaan. Informasi desa/kelurahan dan kabupaten/kota digunakan untuk
+operasional rental dan pemeriksaan jangkauan layanan.
 
 ### Pengungkapan dan layanan pihak ketiga
 
@@ -138,6 +143,11 @@ rentals, communicate, process payments and deposits, manage returns, damage,
 security, misuse, audits, and disputes, and comply with law. The basis may be
 steps requested by the user, contract performance, legal obligations, specific
 consent, or a legitimate interest balanced against the user's rights.
+
+Primary service is available in East Lombok. Requests from other areas on
+Lombok may be considered based on operational coverage and availability.
+Village and regency/city information supports rental operations and service-area
+assessment.
 
 ### Disclosure and third-party services
 

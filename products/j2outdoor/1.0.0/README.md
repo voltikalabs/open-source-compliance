@@ -47,6 +47,11 @@ See [archive contents and retention](RELEASE-ARCHIVE.md). They are Release
 assets, not Git blobs. Google Play submission, Data safety declarations, and
 Play-generated artifact checks remain pending.
 
+Source remediation for the next candidate replaces the proprietary local
+customer-data cipher with standard AES-256-GCM. It does not modify the
+immutable v11 assets; see
+[customer local encryption status](CUSTOMER-LOCAL-ENCRYPTION.md).
+
 Signing keystores, signing passwords, service credentials, and other private
 release secrets are never published. Publishing the compiled APK or AAB does
 not publish the proprietary J2Outdoor application source code.

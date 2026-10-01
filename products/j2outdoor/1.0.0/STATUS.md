@@ -10,6 +10,13 @@ administrator-login, production-connectivity, primary-navigation,
 embedded-license, and Privacy Policy checks. Instrumented log/OCR and relinking
 evidence remains tied to the immediately preceding v10 baseline.
 
+The next-candidate source replaces the proprietary `J2N1` local telephone
+protection with platform-provider AES-256-GCM. The API contract and backend are
+unchanged. This source remediation does not alter the published v11 binaries;
+a new signed candidate, audit, archive, and applicable export
+classification/reporting record remain required. See
+`CUSTOMER-LOCAL-ENCRYPTION.md`.
+
 The v10 production baseline includes the Qt Multimedia Android classes and passed
 package, signature, and 16 KiB alignment checks. That APK was
 update-installed and passed cold startup, foreground-activity, and PID-scoped
@@ -30,7 +37,8 @@ remained in private cache after restart. Test screenshots containing the sample
 identity image were deleted. Google Play-generated artifact verification and
 final store checks remain pending. Owner approval is recorded in
 `OWNER-APPROVAL.md`. The public
-Privacy Policy v3 is reconciled with the new embedded document version
+Privacy Policy v4 is reconciled with the source-level service-area update and
+the v11 ML Kit disclosure. The published v11 artifact retains embedded version
 `2026-10-01-v11-draft` without publishing individual staff names.
 
 The audit classified all 69 resolved Gradle runtime coordinates and recorded
