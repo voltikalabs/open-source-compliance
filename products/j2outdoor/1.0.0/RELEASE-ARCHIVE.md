@@ -2,8 +2,14 @@
 
 This archive is a production-configured release candidate, not a Google Play
 approved or submitted release. Owner approval has been recorded. Google Play
-account verification, Data safety submission, and Play-generated package checks
-remain pending.
+Data safety submission and Play-generated package checks remain pending.
+The owner has confirmed that account verification is complete and app creation
+is available.
+
+Publication verified: all four Release assets are public. Their GitHub SHA-256
+digests match the local files in `RELEASE-ASSET-SHA256SUMS.txt`. The immutable
+ZIP contains the checklist and status snapshot from before publication;
+current repository documents record later progress.
 
 Release tag: `j2outdoor-1.0.0-v11-rc1`.
 

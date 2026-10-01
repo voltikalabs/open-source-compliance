@@ -47,7 +47,8 @@ The signed v11 APK SHA-256 is
 the signed v11 AAB SHA-256 is
 `7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A`.
 Google Play-generated artifact verification and Data Safety submission remain
-pending. Owner approval is complete. The v11 archive is prepared for the
+pending. Owner approval and Play Console account verification are complete.
+The v11 archive is published in the
 `j2outdoor-1.0.0-v11-rc1` prerelease; see `RELEASE-ARCHIVE.md` for contents,
 publication status, and the ongoing retention commitment.
 

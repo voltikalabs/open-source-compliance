@@ -41,7 +41,7 @@ https://github.com/voltikalabs/open-source-compliance/tree/main/sources/qt/6.10.
 ## Distribution artifacts
 
 The hashes identify the owner-approved, audited v11 production candidate.
-The candidate APK/AAB and complete compliance ZIP are prepared for the
+The candidate APK/AAB and complete compliance ZIP are published in the
 [v11 prerelease](https://github.com/voltikalabs/open-source-compliance/releases/tag/j2outdoor-1.0.0-v11-rc1).
 See [archive contents and retention](RELEASE-ARCHIVE.md). They are Release
 assets, not Git blobs. Google Play submission, Data safety declarations, and

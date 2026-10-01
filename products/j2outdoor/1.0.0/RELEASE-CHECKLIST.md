@@ -2,6 +2,9 @@
 
 Last updated: 2026-10-01
 
+Owner approval is complete; see `OWNER-APPROVAL.md`. Actual Play Console
+submission and final store checks remain separate gates.
+
 This is the engineering source of truth for the Android `arm64-v8a` release.
 Complete it again for every version, ABI, and store. A checked item means that
 evidence exists for the current release source or candidate; it does not by
@@ -18,12 +21,12 @@ itself constitute legal advice.
 | P0 | Qt security/CVE review | Patched package proof complete | Four official patches were compiled for Android arm64-v8a. Deployment provenance, build hashes, SBOMs, and matching stripped APK/AAB library hashes are recorded. |
 | P0 | Final Play artifact | Production candidate audited | Exact production APK/AAB pass packaging, signature, inventory, and alignment checks. Play-generated artifact verification remains after upload. |
 | P0 | Account deletion | Published and publicly reachable | The privacy, deletion, and compliance URLs returned HTTP 200 without authentication; final store-listing reconciliation remains. |
-| P0 | Privacy Policy and Data safety | Policy/worksheet reconciled; Play submission pending | Embedded v11 and public v3 include ML Kit device/app diagnostics and per-installation identifiers. Owner approval and actual Play Console submission remain. |
+| P0 | Privacy Policy and Data safety | Owner approved; Play submission pending | Embedded v11 and public v3 include ML Kit device/app diagnostics and per-installation identifiers. Actual Play Console submission remains. |
 | P1 | SBOM and resolved dependencies | Complete for signed v11 candidate | All 69 resolved Gradle runtime coordinates are classified; 65 cached binaries are checksummed, four coordinates are metadata-only, and exact ML Kit third-party licenses are packaged as distributed resources. |
 | P1 | LGPL relinking proof | v10 production baseline passed | QtSvg was replaced in the immediately preceding v10 production APK, stored uncompressed, realigned, recipient-signed, installed, and run on Android 16/arm64-v8a; the official APK was then restored. The reviewed Qt library set is unchanged in v11. |
 | P1 | Functional/security regression | v11 manual device acceptance and package audit complete | The exact v11 APK installed successfully and passed owner-performed startup, administrator login, production connectivity, primary navigation, license-entry, and Privacy Policy checks. Automated/assisted v10 baseline checks covered background/resume, fatal/JNI/native-link errors, runtime camera permission, capture, and on-device OCR. Checkout, export/import, and backup operations were not independently instrumented. |
-| P1 | Owner/store review | Pending | The owner must verify the rental terms, Privacy Policy, operational facts, store listing, and compliance URLs. Limited Indonesian legal advice remains recommended for KTP collateral and dispute terms, but is not a release prerequisite. |
-| P2 | Release archive and publication | Candidate evidence ready | Publish the final AAB and optional verification APK as GitHub Release assets after the remaining gates; hashes, notices, source/patches, and inventory are ready in Git. |
+| P1 | Owner/store review | Owner approved; store checks pending | J2Outdoor understands and approves the operational facts, store terms, Privacy Policy, Data safety answers, and release bundle. Verify final store listing, publisher identity, and compliance URLs during Play setup. |
+| P2 | Release archive and publication | v11 candidate published | Complete ZIP, signed APK/AAB, and checksums are published under `j2outdoor-1.0.0-v11-rc1`. GitHub asset digests match the local archive. Exact Play-upload reconciliation remains pending. |
 
 The previous signed APK/AAB include `2026-09-30-v10-draft` and remain only as
 physical-device/relinking baseline evidence. The signed v11 candidate includes
@@ -91,7 +94,7 @@ its refreshed hashes and inventories are recorded below.
       cache after restart.
 - [x] Reconcile verified production behavior and the current ML Kit disclosure
       with the working Data Safety answers; actual Play Console submission and
-      owner approval remain external gates.
+      final store checks remain external gates; owner approval is recorded.
 - [x] Record that J2Outdoor 1.0.0 does not distribute a custom EULA; the
       inactive internal draft is excluded from application resources and public terms.
 - [x] Confirm the distributed rental/privacy terms do not restrict LGPL
@@ -129,10 +132,19 @@ its refreshed hashes and inventories are recorded below.
 
 ## Release archive
 
-- [ ] Archive the shipped binary, inventory, SBOM, notices, source, patches,
+Candidate release:
+https://github.com/voltikalabs/open-source-compliance/releases/tag/j2outdoor-1.0.0-v11-rc1
+
+The project owner reports Play Console account verification complete and
+Create app available. App creation, AAB upload, Data safety submission, and
+Play-generated package checks are still pending. The immutable ZIP contains
+the pre-publication checklist snapshot; this checklist records subsequent progress.
+
+- [x] Archive the v11 candidate binary, inventory, SBOM, notices, source, patches,
       hashes, rental/privacy terms, relinking instructions, and completed checklist together.
-      The v11 candidate archive is being prepared before Play submission;
-      the checklist snapshot preserves outstanding Play checks.
+      Complete ZIP published and verified; the checklist snapshot preserves
+      outstanding Play checks. Final shipped-artifact reconciliation remains.
+- [x] Publish candidate APK/AAB as GitHub prerelease assets and record hashes.
 - [ ] Publish the exact Play AAB and optional verification APK as release assets,
       not Git blobs, and record their SHA-256 hashes in the version directory.
 - [x] Confirm that no keystore, signing password, service credential, or other
@@ -141,6 +153,7 @@ its refreshed hashes and inventories are recorded below.
       license rights and for any longer period required by applicable law.
       Ongoing commitment: retain versioned GitHub Release assets and a local
       backup; see the public `RELEASE-ARCHIVE.md` retention policy.
+- [x] Establish the public archive, local backup, and retention commitment.
 - [x] Obtain documented business-owner approval of the operational facts,
       store terms, Privacy Policy, Data safety answers, and release bundle.
       J2Outdoor has understood and approved these materials as recorded on
