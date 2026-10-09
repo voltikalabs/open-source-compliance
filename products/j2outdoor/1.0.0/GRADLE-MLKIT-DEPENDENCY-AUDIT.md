@@ -2,6 +2,13 @@
 
 Audit date: 2026-10-01
 
+Scope note (2026-10-10): this binary/dependency audit is historical evidence
+for the artifact audited on its audit date, not proof of the current source
+workflow or a future production build. Current J2Outdoor customer entry is
+manual and does not invoke KTP OCR; ML Kit remains bundled as a reusable
+framework dependency. Keep the SDK disclosures conservative while bundled and
+repeat package/dependency verification for the exact production artifact.
+
 ## Scope
 
 This audit covers the resolved `releaseRuntimeClasspath` exported from the

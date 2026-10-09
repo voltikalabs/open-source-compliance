@@ -2,6 +2,16 @@
 
 Recorded: 2026-10-01. Updated: 2026-10-02.
 
+The approval below originally covered the v12 materials and the exact
+artifacts identified there. On 2026-10-10, the business owner explicitly
+approved the updated v13 rental terms and privacy disclosures for the current
+J2Outdoor workflow: customer details are entered manually; the app does not
+capture or select KTP images or invoke OCR; and Google ML Kit remains
+documented as a bundled reusable framework dependency. This approval covers
+the v13 text, not a future build or Play Console Data Safety submission. The
+production artifact must embed the approved terms and be audited before those
+materials are represented as shipped.
+
 J2Outdoor has reviewed and understood the operational facts, store terms,
 Privacy Policy, Data safety answers, and release bundle, and approves these
 materials for the J2Outdoor 1.0.0 release candidate.

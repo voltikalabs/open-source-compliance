@@ -1,5 +1,12 @@
 # J2Outdoor 1.0.0 Open-Source Compliance
 
+> Policy status (2026-10-10): the signed artifacts and audit records below are
+> historical and embed/reference `2026-10-01-v12-draft`. The current source
+> policy is `2026-10-10-v13`, approved by the business owner on 2026-10-10. It
+> documents manual customer data entry and no KTP OCR in the J2Outdoor
+> workflow; ML Kit remains a reusable bundled framework dependency. Build and
+> audit a new exact production artifact before representing v13 as shipped.
+
 J2Outdoor application code and original assets are proprietary. This directory
 provides notices and compliance materials for the open-source components
 distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.

@@ -1,9 +1,15 @@
 # J2Outdoor 1.0.0 Release Compliance Checklist
 
-Last updated: 2026-10-02
+Last updated: 2026-10-10
 
-Owner approval is complete; see `OWNER-APPROVAL.md`. Actual Play Console
-submission and final store checks remain separate gates.
+Current policy `2026-10-10-v13` was approved by the owner on 2026-10-10 but is
+not embedded in the archived signed APK/AAB. The policy, Data Safety answers,
+and corresponding artifact audit must be reconciled again before a production
+release. Earlier OCR and package tests below are historical evidence only.
+
+Owner approval covers v12 and the current v13 policy text; see
+`OWNER-APPROVAL.md`. Actual Play Console submission and final store checks
+remain separate gates.
 
 This is the engineering source of truth for the Android `arm64-v8a` release.
 Complete it again for every version, ABI, and store. A checked item means that
@@ -21,7 +27,7 @@ itself constitute legal advice.
 | P0 | Qt security/CVE review | Patched package proof complete | Four official patches were compiled for Android arm64-v8a. Deployment provenance, build hashes, SBOMs, and matching stripped APK/AAB library hashes are recorded. |
 | P0 | Final Play artifact | AES production candidate audited | Exact v12 production APK/AAB pass packaging, signature, inventory, AES-marker, legal-resource, and alignment checks. Production smoke and Play-generated artifact verification remain. |
 | P0 | Account deletion | Published and publicly reachable | The privacy, deletion, and compliance URLs returned HTTP 200 without authentication; final store-listing reconciliation remains. |
-| P0 | Privacy Policy and Data safety | Owner approved; Play submission pending | Embedded v12 and public v4 include ML Kit disclosures and the Lombok service-area statement. Actual Play Console submission remains. |
+| P0 | Privacy Policy and Data safety | v13 policy approved; production verification and Play submission pending | Current policy describes manual customer entry/no KTP OCR in J2Outdoor and retains conservative ML Kit disclosures while the dependency is bundled. Archived artifacts contain older policy versions; reconcile the exact new production build and Play answers before submission. |
 | P0 | U.S. export classification | Complete for exact AES candidate | `EXPORT-CLASSIFICATION-EAR99.md` records EAR99 from the product-function assessment; no ENC classification request, CCATS, or annual ENC report was identified as applicable. |
 | P1 | SBOM and resolved dependencies | Complete for signed AES candidate | All 69 resolved Gradle runtime coordinates are classified; 65 cached binaries are checksummed, four coordinates are metadata-only, and exact ML Kit third-party licenses are packaged as distributed resources. |
 | P1 | LGPL relinking proof | v10 production baseline passed | QtSvg was replaced in the immediately preceding v10 production APK, stored uncompressed, realigned, recipient-signed, installed, and run on Android 16/arm64-v8a; the official APK was then restored. The reviewed Qt library set is unchanged in v11. |
@@ -30,8 +36,10 @@ itself constitute legal advice.
 | P2 | Release archive and publication | v11 candidate published | Complete ZIP, signed APK/AAB, and checksums are published under `j2outdoor-1.0.0-v11-rc1`. GitHub asset digests match the local archive. Exact Play-upload reconciliation remains pending. |
 
 The v10 and v11 signed packages remain physical-device, relinking, and archive
-baseline evidence. The new candidate includes the dependency-license resources,
-`2026-10-01-v12-draft`, and the AES-GCM remediation.
+baseline evidence. The signed AES candidate includes the dependency-license
+resources, `2026-10-01-v12-draft`, and the AES-GCM remediation. It does not
+contain approved policy `2026-10-10-v13`; do not treat it as evidence for
+the updated policy or current customer workflow.
 
 ## Current evidence
 
@@ -92,7 +100,7 @@ baseline evidence. The new candidate includes the dependency-license resources,
       integration guide, and release notes; keep Google product terms separate
       from the exact AAR's embedded third-party open-source license bundle.
 - [x] Reconcile `ID-CARD-OCR-PRIVACY.md` with the prepared public privacy policy.
-- [x] Exercise runtime camera permission, capture, and local OCR on the v10
+- [x] Historical: exercise runtime camera permission, capture, and local OCR on the v10
       production physical-test baseline; confirm the customer is not saved
       when Save is not invoked and that no scan file remains in the private
       cache after restart.
@@ -129,10 +137,12 @@ baseline evidence. The new candidate includes the dependency-license resources,
       alignment, startup, storefront, primary customer navigation,
       background/resume, embedded notices, and relinking passed; the owner
       reported all application pages opening normally.
-- [x] Authenticate as an administrator and exercise Dashboard, Rentals, Items,
-      Customers, More, runtime camera permission, in-app capture, and local OCR
-      on the v10 production physical-test baseline without retaining the sample
-      identity image.
+- [x] Historical: authenticate as an administrator and exercise Dashboard,
+      Rentals, Items, Customers, More, runtime camera permission, in-app
+      capture, and local OCR on the v10 production physical-test baseline
+      without retaining the sample identity image. This predates the current
+      manual-entry workflow and is not evidence that current J2Outdoor exposes
+      OCR.
 
 ## Release archive
 

@@ -1,8 +1,8 @@
 # SYARAT PENYEWAAN & KEBIJAKAN PRIVASI J2 OUTDOOR
 
-**Versi:** 2026-10-01-v12-draft
+**Versi:** 2026-10-10-v13
 
-**Tanggal berlaku:** 1 Oktober 2026
+**Tanggal berlaku:** 10 Oktober 2026
 
 Dokumen ini menjelaskan syarat pengajuan dan pelaksanaan penyewaan peralatan serta cara J2 Outdoor memproses Data Pribadi. Bacalah seluruh dokumen sebelum memberikan persetujuan.
 
@@ -36,7 +36,7 @@ Pada tahap permintaan, kami dapat memproses nama, nomor WhatsApp bila diberikan,
 
 Pelanggan tidak membuat atau menggunakan akun J2Outdoor. Data pelanggan hanya disimpan sebagai draft permintaan atau catatan rental sesuai alur dan jadwal retensi dalam dokumen ini. Akun aplikasi hanya digunakan oleh admin yang berwenang.
 
-Jika rental dilanjutkan, kami menyimpan nama, nomor telepon, desa/kelurahan, kabupaten/kota, informasi transaksi, pembayaran, deposit, kondisi dan pengembalian barang, status penerimaan/pengembalian jaminan, serta catatan relevan. Dalam alur data pelanggan milik admin, OCR dapat memproses gambar KTP yang dipilih atau diambil secara lokal dan sementara untuk membantu input. Admin wajib meninjau dan memperbaiki nama, desa/kelurahan, serta kabupaten/kota hasil ekstraksi sebelum menyimpan. Aplikasi tidak menyimpan NIK, tempat/tanggal lahir, alamat lengkap, gambar KTP, atau hasil OCR mentah. Jangan mengirim foto KTP melalui catatan atau WhatsApp.
+Jika rental dilanjutkan, kami menyimpan nama, nomor telepon, desa/kelurahan, kabupaten/kota, informasi transaksi, pembayaran, deposit, kondisi dan pengembalian barang, status penerimaan/pengembalian jaminan, serta catatan relevan. Data pelanggan pada aplikasi J2Outdoor saat ini dimasukkan secara manual oleh admin. Formulir pelanggan tidak menyediakan pengambilan atau pemilihan foto KTP, dan aplikasi J2Outdoor tidak menjalankan OCR KTP. Jika KTP asli diterima sebagai jaminan fisik, dokumen tersebut ditangani oleh admin di luar alur digital aplikasi sebagaimana dijelaskan pada bagian 1 dan 3. Jangan mengirim foto KTP melalui catatan atau WhatsApp.
 
 ## 5. Tujuan dan Dasar Pemrosesan
 
@@ -48,7 +48,7 @@ Dasar pemrosesan dapat berupa persetujuan eksplisit Anda, tindakan atas perminta
 
 ## 6. Penyimpanan, Keamanan, dan Retensi
 
-Nomor telepon dan isi draft yang mengandung Data Pribadi dilindungi dengan enkripsi. Kunci disimpan melalui fasilitas penyimpanan kredensial sistem operasi. Akses dibatasi kepada admin yang berwenang. Jika KTP asli diterima sebagai jaminan fisik, admin yang berwenang wajib menyimpannya di tempat yang aman dan aksesnya terbatas hanya selama jangka waktu penitipan yang disepakati, lalu mengembalikannya segera setelah ketentuan pengembalian terpenuhi. Aplikasi tidak menyimpan isi, gambar KTP, atau hasil OCR mentah. J2 Outdoor wajib memiliki catatan serah-terima dan pengembalian tanpa menyalin rincian KTP yang tidak diperlukan.
+Nomor telepon dan isi draft yang mengandung Data Pribadi dilindungi dengan enkripsi. Kunci disimpan melalui fasilitas penyimpanan kredensial sistem operasi. Akses dibatasi kepada admin yang berwenang. Jika KTP asli diterima sebagai jaminan fisik, admin yang berwenang wajib menyimpannya di tempat yang aman dan aksesnya terbatas hanya selama jangka waktu penitipan yang disepakati, lalu mengembalikannya segera setelah ketentuan pengembalian terpenuhi. Alur J2Outdoor saat ini tidak mengambil, mengunggah, atau menyimpan gambar KTP dan tidak menghasilkan atau menyimpan hasil OCR KTP. J2 Outdoor wajib memiliki catatan serah-terima dan pengembalian tanpa menyalin rincian KTP yang tidak diperlukan.
 
 Tidak ada sistem yang sepenuhnya bebas risiko. J2 Outdoor menerapkan langkah teknis dan organisasi yang wajar, membatasi akses dan tujuan penggunaan, serta menangani insiden sesuai kewajiban hukum.
 
@@ -62,7 +62,7 @@ Data dapat diakses oleh admin J2 Outdoor yang ditugaskan dan penyedia dukungan t
 
 Saat Anda memilih mengirim melalui WhatsApp, aplikasi membuka layanan WhatsApp dengan pesan yang telah disiapkan. Pemrosesan oleh WhatsApp/Meta tunduk pada ketentuan dan kebijakan privasi mereka. Periksa isi pesan sebelum mengirim dan jangan menambahkan data identitas sensitif yang tidak diperlukan.
 
-Google ML Kit Text Recognition memproses gambar dan hasil OCR pada perangkat dan tidak mengirimkannya ke server Google. Menurut pengungkapan Google, SDK mengumpulkan informasi perangkat (seperti produsen, model, versi/build sistem operasi, dan akselerator ML), informasi aplikasi (nama paket dan versi), metrik performa/penggunaan, serta pengenal per-instalasi yang tidak dimaksudkan untuk mengidentifikasi pengguna atau perangkat fisik. Data diagnostik dan analitik penggunaan tersebut dikirim ke Google dengan HTTPS dan, menurut Google, tidak dibagikan kepada pihak ketiga. SDK juga dapat menghubungi Google untuk perbaikan, pembaruan model, dan informasi kompatibilitas akselerator.
+J2Outdoor saat ini tidak memanggil fitur OCR KTP. Paket Android masih menyertakan Google ML Kit Text Recognition sebagai dependensi framework multimedia yang dapat digunakan aplikasi lain; alur pelanggan J2Outdoor tidak mengirim gambar KTP atau teks OCR ke ML Kit. Karena dependensi SDK masih dibundel, pengungkapan Google tentang informasi perangkat/aplikasi, metrik performa/penggunaan, pengenal per-instalasi untuk fitur bundel, serta komunikasi diagnostik dan kompatibilitas tetap dicatat secara konservatif. Menurut Google, data diagnostik tersebut dikirim melalui HTTPS dan tidak dibagikan kepada pihak ketiga. Keberadaan dependensi dan pengungkapan SDK harus ditinjau kembali jika dependensi dihapus atau perilaku runtime berubah.
 
 Jika sinkronisasi server tersedia, draft dan bukti persetujuan dapat dikirim melalui koneksi terlindungi ke server J2 Outdoor agar dapat diakses admin yang berwenang dan, jika disetujui, diproses menjadi rental. Jika ada pemrosesan atau penyimpanan lintas negara, J2 Outdoor wajib menerapkan perlindungan sesuai hukum Indonesia.
 

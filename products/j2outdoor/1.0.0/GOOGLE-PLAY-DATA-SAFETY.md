@@ -1,6 +1,8 @@
 # Google Play Data Safety Working Sheet
 
-Engineering review date: 2026-10-01
+Engineering review date: 2026-10-10
+
+Current approved source policy: Privacy Policy `2026-10-10-v13`; not yet embedded in the archived signed APK/AAB. Re-verify every answer against the actual production build before submission.
 
 This worksheet maps the current J2Outdoor 1.0.0 implementation to Google Play's
 Data safety questions. It is not a console submission and must be checked
@@ -41,19 +43,17 @@ changes.
 | Personal info — Phone number | Collected when supplied or when a rental proceeds | Communication; rental processing | Context-dependent | WhatsApp number and stored customer telephone number. |
 | Personal info — Address | Collected in limited form when a rental proceeds | Rental processing; fraud prevention | Context-dependent | Limited to village and regency/city; no full KTP address. Confirm Play's current subtype wording. |
 | Financial info — Purchase history | Collected | Rental, payment, deposit, refund, and accounting records | Required for completed transactions | Do not classify payment-card or bank credentials unless the implementation begins collecting them. |
-| Photos and videos — Photos | Not collected by the reviewed OCR flow | On-device app functionality | Optional input | KTP image is selected/captured and processed temporarily on device. Reclassify if it is uploaded, backed up, or logged. |
+| Photos and videos — Photos | Collected when administrators upload product photos | App functionality; catalog management | Optional | Product media is uploaded to the J2 Outdoor service. Do not classify KTP photos as an app feature: the current customer workflow has no KTP capture/selection and does not run OCR. Confirm Play's current subtype and collection answers against production behavior. |
+| Photos and videos — Videos | Collected when administrators upload product videos | App functionality; catalog management | Optional | Product videos are uploaded to the J2 Outdoor service. Verify the server and retention behavior for the production release. |
 | App activity — App interactions | Not known to be collected for analytics | — | — | Confirm no production analytics or interaction telemetry exists. |
 | App info and performance — Diagnostics | Collected by ML Kit | Diagnostics; usage analytics; SDK reliability and compatibility | SDK-controlled | Google lists device/app information and performance/utilization metrics for all ML Kit features. |
 | Device or other IDs | Collected by ML Kit | Diagnostics; usage analytics | SDK-controlled | For bundled features, Google lists a per-installation identifier not intended to identify a user or physical device. |
 
-On 2026-09-30, the exact production APK was exercised on a physical Android
-16 device. Android runtime camera permission, in-app capture, and on-device OCR
-worked with a sample image. The extracted name, village, and regency/city were
-shown in editable fields. Save Customer was not invoked, the customer list
-remained empty, and no `id-card-scan` file remained in the private cache after
-restart. Source review confirmed that the customer-save payload excludes the
-image, NIK, and raw OCR text. Test screenshots containing the sample identity
-image were deleted after verification.
+Historical note: an earlier production candidate was tested with camera capture
+and on-device KTP OCR on 2026-09-30. That test does not describe the current
+J2Outdoor customer workflow, which enters customer details manually and does
+not expose KTP capture/selection or invoke OCR. Keep this as historical test
+evidence only; do not use it as a current feature or Data Safety justification.
 
 ## Sharing assessment
 
@@ -66,10 +66,13 @@ image were deleted after verification.
 - A user can intentionally send a prepared message to WhatsApp. Confirm the
   current Play definition and user-initiated-transfer exception in the console
   before deciding whether the relevant types are marked as “shared.”
-- ML Kit's on-device OCR input and output are not intentionally sent to Google,
-  but SDK device/app information, per-installation identifier, diagnostics, and
-  utilization data are classified as collected. Google states that these data
-  are encrypted in transit with HTTPS and are not transferred to third parties.
+- The current J2Outdoor customer workflow does not invoke ML Kit and does not
+  pass it KTP images or OCR text. ML Kit remains bundled as a reusable framework
+  dependency; conservatively classify SDK device/app information,
+  per-installation identifier, diagnostics, and utilization data as collected
+  until the dependency is removed or current SDK disclosures are verified for
+  the exact release. Google states these data are encrypted in transit with
+  HTTPS and are not transferred to third parties.
 - No data-sale claim may be selected unless production behavior remains
   consistent with the Privacy Policy.
 
@@ -83,7 +86,8 @@ image were deleted after verification.
 - Legal hold: retain only relevant records while an active transaction,
   suspected fraud, audit, dispute, or legal proceeding remains open.
 - After retention or hold: securely delete or permanently de-identify.
-- Do not retain NIK, KTP images, full KTP address, or raw OCR output.
+- Current workflow: customer details are entered manually; J2Outdoor does not
+  capture/select KTP images or run OCR. Do not retain KTP images or OCR output.
 
 ## Submission gates
 

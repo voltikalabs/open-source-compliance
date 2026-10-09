@@ -1,8 +1,8 @@
 # J2 OUTDOOR RENTAL TERMS & PRIVACY POLICY
 
-**Version:** 2026-10-01-v12-draft
+**Version:** 2026-10-10-v13
 
-**Effective date:** 1 October 2026
+**Effective date:** 10 October 2026
 
 This document explains the terms for requesting and carrying out an equipment rental and how J2 Outdoor processes Personal Data. Read the entire document before giving consent.
 
@@ -36,7 +36,7 @@ At the request stage, we may process your name, WhatsApp number if provided, not
 
 Customers do not create or use J2Outdoor accounts. Customer data is stored only as a request draft or rental record under the flows and retention schedule in this document. Application accounts are used only by authorized administrators.
 
-If the rental proceeds, we store name, telephone number, village, regency/city, transaction, payment and deposit information, equipment condition and return records, collateral receipt/return status, and relevant notes. In the administrator's customer-data workflow, OCR may process a selected or captured KTP image locally and temporarily to assist entry. The administrator must review and correct the extracted name, village, and regency/city before saving. The application does not retain the NIK, place/date of birth, full address, KTP image, or raw OCR output. Do not send an ID-card image in notes or through WhatsApp.
+If the rental proceeds, we store name, telephone number, village, regency/city, transaction, payment and deposit information, equipment condition and return records, collateral receipt/return status, and relevant notes. Customer data in the current J2Outdoor application is entered manually by an administrator. The customer form does not provide KTP photo capture or selection, and J2Outdoor does not run KTP OCR. If an original KTP is accepted as physical collateral, the administrator handles it outside the application's digital workflow as described in sections 1 and 3. Do not send a KTP photo in notes or through WhatsApp.
 
 ## 5. Purposes and Legal Bases
 
@@ -48,7 +48,7 @@ Depending on the activity, the legal basis may be your explicit consent, steps t
 
 ## 6. Storage, Security, and Retention
 
-Telephone numbers and draft content containing Personal Data are protected with encryption. Keys are held through the operating-system credential facility and access is restricted to authorized administrators. If an original KTP is accepted as physical collateral, the authorized administrator must keep it in secure, access-controlled storage only for the confirmed custody period and return it promptly when the agreed return conditions are met. The application does not store the KTP content, image, or raw OCR output. J2 Outdoor must maintain a handover and return record without copying unnecessary KTP details.
+Telephone numbers and draft content containing Personal Data are protected with encryption. Keys are held through the operating-system credential facility and access is restricted to authorized administrators. If an original KTP is accepted as physical collateral, the authorized administrator must keep it in secure, access-controlled storage only for the confirmed custody period and return it promptly when the agreed return conditions are met. The current J2Outdoor workflow does not capture, upload, or store KTP images and does not produce or store OCR output. J2 Outdoor must maintain a handover and return record without copying unnecessary KTP details.
 
 No system is completely risk-free. J2 Outdoor applies reasonable technical and organizational measures, limits access and use to stated purposes, and handles incidents in accordance with legal obligations.
 
@@ -60,9 +60,9 @@ If a record is needed for an active transaction, suspected fraud, a dispute, an 
 
 Data may be accessed by assigned J2 Outdoor administrators and technical application or server support providers appointed by J2 Outdoor, only as required to operate the system, under J2 Outdoor's instructions as Personal Data Controller, and subject to appropriate safeguards. Personal Data is not sold.
 
-When you choose to send through WhatsApp, the application opens WhatsApp with a prepared message. Processing by WhatsApp/Meta is governed by their own terms and privacy policies. Review the message before sending and do not add unnecessary sensitive identity data.
+When you choose to send through WhatsApp, the application opens WhatsApp with a prepared message. Processing by WhatsApp/Meta is governed by their own terms and privacy policies. Review the message before sending and do not add unnecessary sensitive identity data. J2Outdoor does not invoke OCR in its current customer workflow. The application package retains Google ML Kit Text Recognition as a reusable framework dependency; the J2Outdoor customer workflow does not send KTP images or OCR text to ML Kit. While the SDK remains bundled, its published diagnostics and usage-analytics disclosures are conservatively described below.
 
-Google ML Kit Text Recognition processes images and OCR output on the device and does not send them to Google servers. According to Google's disclosure, the SDK collects device information (such as manufacturer, model, operating-system version/build, and ML accelerators), application information (package name and version), performance/utilization metrics, and a per-installation identifier not intended to identify a user or physical device. This diagnostics and usage-analytics data is sent to Google using HTTPS and, according to Google, is not shared with third parties. The SDK may also contact Google for bug fixes, model updates, and accelerator-compatibility information.
+Google's published ML Kit disclosure states that the SDK may collect device information (such as manufacturer, model, operating-system version/build, and ML accelerators), application information (package name and version), performance/utilization metrics, and a per-installation identifier not intended to identify a user or physical device. This diagnostics and usage-analytics data is sent to Google using HTTPS and, according to Google, is not shared with third parties. The SDK may also contact Google for bug fixes, model updates, and accelerator-compatibility information. J2Outdoor's current customer workflow does not invoke the SDK or provide it with KTP images or OCR text.
 
 When server synchronization is available, the request draft and consent evidence may be transmitted over a protected connection to J2 Outdoor's server so authorized administrators can access it and, if approved, convert it into a rental. If processing or storage occurs across national borders, J2 Outdoor must implement safeguards required by Indonesian law.
 

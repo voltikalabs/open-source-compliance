@@ -44,12 +44,13 @@ support, and Google Data Transport runtime dependencies at the exact versions
 listed in the release compliance inventory. Apache-2.0-covered runtime
 components are accompanied by the complete Apache License 2.0 text.
 
-Android builds use Google ML Kit Text Recognition with the bundled Latin model
-(`com.google.mlkit:text-recognition:16.0.1`) to perform identity-card OCR on the
-device. Google states that ML Kit input and output processing occurs on-device;
-the SDK may nevertheless communicate with Google for maintenance, hardware
-compatibility, and performance or utilization metrics. Use of ML Kit is
-governed by the ML Kit Terms and the Google APIs Terms of Service:
+Android builds include Google ML Kit Text Recognition with the bundled Latin
+model (`com.google.mlkit:text-recognition:16.0.1`) as a reusable framework
+dependency. The current J2Outdoor customer workflow does not invoke OCR or
+provide KTP images or OCR text to ML Kit. The SDK may nevertheless communicate
+with Google for maintenance, hardware compatibility, and performance or
+utilization metrics. Use of ML Kit is governed by the ML Kit Terms and the
+Google APIs Terms of Service:
 https://developers.google.com/ml-kit/terms
 https://developers.google.com/terms/
 

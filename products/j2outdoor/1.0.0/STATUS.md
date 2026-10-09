@@ -1,6 +1,18 @@
 # J2Outdoor 1.0.0 release status
 
-Status date: 2026-10-02
+Status date: 2026-10-10
+
+## Current policy update
+
+The current J2Outdoor source has disabled the KTP OCR customer workflow; customer
+records are entered manually. The reusable application framework still bundles
+Google ML Kit Text Recognition, but the current J2Outdoor workflow does not
+invoke it or pass KTP images/OCR text to it. Source terms and the public policy
+have been updated to approved policy `2026-10-10-v13` following the owner's
+explicit approval on 2026-10-10. A production build and new artifact audit are
+still required.
+The signed APK/AAB hashes and audit evidence below describe earlier candidates
+and remain historical; they do not contain or attest to v13.
 
 The dependency/ML Kit audit is complete. The signed v11 production APK/AAB
 contain the refreshed legal resources and privacy text and passed package,

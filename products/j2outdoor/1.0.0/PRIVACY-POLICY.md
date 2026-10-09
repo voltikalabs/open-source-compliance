@@ -1,6 +1,9 @@
 # J2Outdoor Privacy Policy
 
-Version: 2026-10-01-v4
+Version: 2026-10-10-v13
+Effective date: 10 October 2026
+
+This approved policy version is not embedded in the archived signed APK/AAB.
 Effective date: 1 October 2026
 
 The Indonesian text is the primary operational version. The English text below
@@ -31,11 +34,11 @@ kondisi serta pengembalian barang, status penerimaan atau pengembalian jaminan,
 dan catatan yang relevan. Akun admin dapat mencakup nama pengguna, email,
 kredensial yang dilindungi, peran, dan catatan autentikasi atau keamanan.
 
-Fitur OCR dapat memproses sementara gambar KTP yang dipilih atau diambil oleh
-admin pada perangkat untuk membantu pengisian nama, desa/kelurahan, dan
-kabupaten/kota. Aplikasi tidak menyimpan NIK, tempat atau tanggal lahir, alamat
-lengkap dari KTP, gambar KTP, atau hasil OCR mentah. Admin wajib memeriksa hasil
-sebelum menyimpan data pelanggan.
+Data pelanggan pada aplikasi J2Outdoor saat ini dimasukkan secara manual oleh
+admin. Formulir pelanggan tidak menyediakan pengambilan atau pemilihan foto
+KTP, dan aplikasi J2Outdoor tidak menjalankan OCR KTP. Jika KTP asli diterima
+sebagai jaminan fisik, dokumen tersebut ditangani admin di luar alur digital
+aplikasi. Jangan mengirim foto KTP melalui catatan atau WhatsApp.
 
 ### Tujuan dan dasar pemrosesan
 
@@ -58,9 +61,12 @@ aplikasi atau server hanya sejauh diperlukan. Data Pribadi tidak dijual.
 
 Jika pengguna memilih mengirim permintaan melalui WhatsApp, aplikasi membuka
 WhatsApp dengan pesan yang dapat diperiksa sebelum dikirim. Pemrosesan oleh
-WhatsApp/Meta tunduk pada kebijakan mereka. Google ML Kit Text Recognition
-memproses gambar dan hasil OCR pada perangkat dan tidak mengirimkannya ke server
-Google. Menurut pengungkapan Google, SDK mengumpulkan informasi perangkat
+WhatsApp/Meta tunduk pada kebijakan mereka. J2Outdoor tidak memanggil OCR dalam
+alur pelanggan saat ini. Paket aplikasi masih menyertakan Google ML Kit Text
+Recognition sebagai dependensi framework yang dapat digunakan ulang; alur
+pelanggan J2Outdoor tidak mengirim foto KTP atau teks OCR ke ML Kit. Selama SDK
+masih disertakan, pengungkapan diagnostik dan analitik penggunaan Google
+dijelaskan secara konservatif. Menurut pengungkapan Google, SDK mengumpulkan informasi perangkat
 (seperti produsen, model, versi/build sistem operasi, dan akselerator ML),
 informasi aplikasi (nama paket dan versi), metrik performa/penggunaan, serta
 pengenal per-instalasi yang tidak dimaksudkan untuk mengidentifikasi pengguna
@@ -130,11 +136,11 @@ and return records, collateral receipt or return status, and relevant notes.
 Administrator accounts may include a username, email, protected credentials,
 role, and authentication or security records.
 
-OCR may temporarily process a KTP image selected or captured by an administrator
-on the device to assist entry of a name, village, and regency/city. The
-application does not retain a NIK, place or date of birth, full address from the
-KTP, KTP image, or raw OCR output. An administrator must review the result
-before customer data is saved.
+Customer data in the current J2Outdoor application is entered manually by an
+administrator. The customer form does not provide KTP photo capture or
+selection, and J2Outdoor does not run KTP OCR. If an original KTP is accepted
+as physical collateral, the administrator handles it outside the application's
+digital workflow. Do not send KTP photos in notes or through WhatsApp.
 
 ### Purposes and legal bases
 
@@ -156,9 +162,12 @@ application or server operators only as necessary. Personal Data is not sold.
 
 When a user chooses to send a request through WhatsApp, the application opens
 WhatsApp with a message that can be reviewed before sending. Processing by
-WhatsApp/Meta is governed by their policies. Google ML Kit Text Recognition
-processes images and OCR output on the device and does not send them to Google
-servers. According to Google's disclosure, the SDK collects device information
+WhatsApp/Meta is governed by their policies. J2Outdoor does not invoke OCR in
+its current customer workflow. The application package retains Google ML Kit
+Text Recognition as a reusable framework dependency; the J2Outdoor customer
+workflow does not send KTP images or OCR text to ML Kit. While the SDK remains
+bundled, its published diagnostics and usage-analytics disclosures are
+described conservatively. According to Google's disclosure, the SDK collects device information
 (such as manufacturer, model, operating-system version/build, and ML
 accelerators), application information (package name and version),
 performance/utilization metrics, and a per-installation identifier not intended
