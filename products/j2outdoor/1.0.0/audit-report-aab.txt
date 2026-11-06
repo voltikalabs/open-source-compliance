@@ -4,8 +4,8 @@ ABI: arm64-v8a
 API environment: production
 Package signature verification: passed
 Signer certificate SHA-256: dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5
-Package: android-build-release.aab
-SHA-256: 7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A
+Package: android-build-J2Outdoor-release.aab
+SHA-256: 9C4C35008B5B2C11CEEF019FA00E298538F8650261323B4592AAFD15FE8B91F5
 Native libraries: 96
 Forbidden GPL-only indicators: 0
 Debug plugin indicators: 0

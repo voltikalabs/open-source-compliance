@@ -1,11 +1,9 @@
 # J2Outdoor 1.0.0 Open-Source Compliance
 
-> Policy status (2026-10-10): the signed artifacts and audit records below are
-> historical and embed/reference `2026-10-01-v12-draft`. The current source
-> policy is `2026-10-10-v13`, approved by the business owner on 2026-10-10. It
-> documents manual customer data entry and no KTP OCR in the J2Outdoor
-> workflow; ML Kit remains a reusable bundled framework dependency. Build and
-> audit a new exact production artifact before representing v13 as shipped.
+> Release status (2026-11-05): the current production-upload candidate is
+> version name `1.0.0`, version code `8`, and embeds approved privacy policy
+> `2026-10-10-v13`. It is awaiting Google Play production-access approval; it
+> is not yet a Play-distributed artifact.
 
 J2Outdoor application code and original assets are proprietary. This directory
 provides notices and compliance materials for the open-source components
@@ -13,8 +11,8 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
 
 ## Build summary
 
-- Release status: signed AES production candidate built and audited; production
-  device smoke, publication, Google Play submission, and Play-generated
+- Release status: signed production-upload candidate built and audited;
+  Google Play production-access approval, AAB upload, and Play-generated
   artifact verification remain
 - Android package ID: `id.web.voltikalabs.j2outdoor`
 - Qt version: 6.10.3
@@ -25,20 +23,21 @@ distributed with J2Outdoor 1.0.0 for Android `arm64-v8a`.
   recorded below
 - Android ABI: `arm64-v8a`
 - Minimum Android API: 28
+- Android version code: `8`
+- Embedded legal-document version: `2026-10-10-v13`
 - Audited production signed APK SHA-256:
-  `2DAC3A77203E08F6CDBB3E5782D4B3A41CD5859E41671306DFAAC4451AE253B3`
+  `4B61BD9DCCC4B650AE920B94D5DD7D4B3E303D178682D1DE3A8C5019AE52257E`
 - Audited production signed AAB SHA-256:
-  `5C967785C6F5E0B43FACE7AC41764ACB3F3B5B1EADCF5873A200988FC7F03920`
+  `9C4C35008B5B2C11CEEF019FA00E298538F8650261323B4592AAFD15FE8B91F5`
 - Signer certificate SHA-256:
   `dab7a4b834009e753005697fcb2789cc2e035fd99dbfd49ad35dfdf7c2b0fec5`
 
-The APK/AAB hashes above identify the signed AES candidate containing the exact
-ML Kit third-party licenses, supplemental licenses, `J2A1` AES-256-GCM, and
-privacy version `2026-10-01-v12-draft`. Package, signature, 16 KiB alignment,
-native-library, AES-marker, and embedded-resource checks passed. The staging
-AES build successfully saved and displayed a customer telephone number. The
-earlier v11 page-level and v10 instrumented OCR/relinking results remain
-baseline evidence until the exact production APK smoke test is complete.
+The APK/AAB hashes above identify the current local production-upload
+candidate. Package identity, local signatures, native-library inventory,
+absence of GPL-only/debug indicators, Qt Multimedia Android classes, and the
+embedded v13 legal-document version were audited. Historical v10/v11/v12
+evidence remains available as baseline evidence and does not identify this
+candidate.
 
 ## Corresponding Qt source
 
@@ -48,14 +47,13 @@ https://github.com/voltikalabs/open-source-compliance/tree/main/sources/qt/6.10.
 
 ## Distribution artifacts
 
-The hashes identify the newly audited AES production candidate. The preceding
+The hashes identify the current local production-upload candidate. The preceding
 v11 APK/AAB and complete compliance ZIP remain published in the
 [v11 prerelease](https://github.com/voltikalabs/open-source-compliance/releases/tag/j2outdoor-1.0.0-v11-rc1).
 See [archive contents and retention](RELEASE-ARCHIVE.md). They are Release
-assets, not Git blobs. The new AES artifacts have not yet been published.
-Production-device smoke,
-Google Play submission, Data safety declarations, and Play-generated artifact
-checks remain pending.
+assets, not Git blobs. The current artifacts have not yet been published or
+uploaded to Play. Google Play production-access approval, AAB submission, Data
+Safety reconciliation, and Play-generated artifact checks remain pending.
 
 Source remediation for the next candidate replaces the proprietary local
 customer-data cipher with standard AES-256-GCM. It does not modify the
@@ -88,6 +86,7 @@ not publish the proprietary J2Outdoor application source code.
 - [Signed artifact checksums](SHA256SUMS.txt)
 - [Packaged Qt and OpenSSL hashes](PACKAGED-NATIVE-SHA256SUMS.txt)
 - [Android artifact verification](ANDROID-VERIFICATION.md)
+- [Current production-upload candidate](PRODUCTION-RELEASE.md)
 - [Gradle and ML Kit dependency audit](GRADLE-MLKIT-DEPENDENCY-AUDIT.md)
 - [Resolved Gradle runtime components](GRADLE-RUNTIME-COMPONENTS.txt)
 - [Gradle runtime artifact hashes](GRADLE-RUNTIME-ARTIFACT-SHA256SUMS.txt)
