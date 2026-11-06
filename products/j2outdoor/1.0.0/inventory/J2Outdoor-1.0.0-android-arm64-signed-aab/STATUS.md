@@ -1,10 +1,9 @@
-# Artifact status
+﻿# Artifact status
 
-This inventory describes the final **production** signed AAB generated on
-2026-10-01 after the Gradle/ML Kit license-resource refresh.
+This inventory is generated from the signed package audited by `audit-android-package.ps1`.
 
 - Environment: `production`
-- SHA-256:
-  `7E2C1F4228AD01930BB9114102AE4C1791B6E90757D6233ED2EBB95B47F1B99A`
-- Embedded legal-document version: `2026-10-01-v11-draft`
-- Package signature verification: passed
+- SHA-256: `9C4C35008B5B2C11CEEF019FA00E298538F8650261323B4592AAFD15FE8B91F5`
+- Embedded legal-document version: `2026-10-10-v13`
+- Package signature verification: `passed`
+- Qt Multimedia Android classes are compiled into `classes.dex`: `True`

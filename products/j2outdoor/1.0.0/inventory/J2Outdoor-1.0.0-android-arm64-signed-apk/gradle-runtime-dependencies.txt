@@ -1,6 +1,6 @@
 ﻿
 ------------------------------------------------------------
-Root project 'android-build'
+Root project 'android-build-J2Outdoor'
 ------------------------------------------------------------
 
 releaseRuntimeClasspath - Resolved configuration for runtime for variant: release

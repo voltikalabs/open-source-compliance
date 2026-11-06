@@ -1,13 +1,9 @@
-# Artifact status
+﻿# Artifact status
 
-This inventory describes the final **production** signed APK generated on
-2026-10-01 after the Gradle/ML Kit license-resource refresh.
+This inventory is generated from the signed package audited by `audit-android-package.ps1`.
 
 - Environment: `production`
-- SHA-256:
-  `A1BFC7BD97E9E7C543F241BC381A04C772E56D62E800C32BA2AED959D0F78C67`
-- Embedded legal-document version: `2026-10-01-v11-draft`
-- Package signature verification: passed
-- Qt Multimedia Android classes are compiled into `classes.dex`; the
-  `org/qtproject/qt/android/multimedia/QtAudioDeviceManager` class indicator
-  was verified.
+- SHA-256: `4B61BD9DCCC4B650AE920B94D5DD7D4B3E303D178682D1DE3A8C5019AE52257E`
+- Embedded legal-document version: `2026-10-10-v13`
+- Package signature verification: `passed`
+- Qt Multimedia Android classes are compiled into `classes.dex`: `True`
